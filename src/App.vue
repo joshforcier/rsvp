@@ -6,8 +6,9 @@
 
 <script>
 
+import Home from './components/Home';
 import Navbar from './components/Navbar';
-import HomePage from './components/HomePage';
+import RSVP from './components/RSVP';
 import Contact from './components/Contact';
 import Pictures from './components/Pictures';
 
@@ -17,8 +18,9 @@ export default {
         document.title = "Josh & Kaylyn";
     },
     components: {
+        Home,
         Navbar,
-        HomePage,
+        RSVP,
         Contact,
         Pictures,
     },

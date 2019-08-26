@@ -1,8 +1,10 @@
 <template>
     <div>
+        <div class="white-space">September 19, 2020        Janesville, WI</div>
+        <h1 class="header--1">JOSH & KAYLYN</h1>
         <nav>
             <router-link
-                class="spacing"
+                class="navbar spacing"
                 v-for="routes in links"
                 :key="routes.id"
                 :to="routes.path"
@@ -23,7 +25,7 @@ export default {
             links: [
                 {
                     id: 0,
-                    name: 'HomePage',
+                    name: 'RSVP',
                     path: '/',
                 },
                 {
@@ -46,5 +48,9 @@ export default {
 <style>
     .spacing {
         Margin-right: 10px;
+    }
+
+    .white-space{
+        white-space:pre;
     }
 </style>

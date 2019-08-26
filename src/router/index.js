@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import router from 'vue-router';
-import HomePage from '../components/HomePage';
+import Home from '../components/Home';
+import RSVP from '../components/RSVP';
 import Pictures from '../components/Pictures';
 import Contact from '../components/Contact';
 
@@ -10,8 +11,8 @@ export default new router({
     routes: [
         {
             path: '/',
-            name: 'HomePage',
-            component: HomePage
+            name: 'Home',
+            component: Home
         },
         {
             path: '/pictures',

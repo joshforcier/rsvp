@@ -5,10 +5,13 @@
                 <h3>rsvp</h3>
             </div>
             <div class="card-body">
-                <form v-on:submit.prevent="addRsvp">
+                <form 
+                    v-on:submit.prevent="addRsvp"
+                >
                     <div class="form-group">
                         <label>How many people are attending?</label>
                         <select
+                            required
                             class="form-control"
                             v-model="selected"
                         >
@@ -25,6 +28,7 @@
                     <div class="form-group">
                         <label>Names:</label>
                         <input
+                            required
                             type="text"
                             class="form-control"
                             v-for="n in Number(selected.number)"
@@ -37,6 +41,7 @@
                     <div class="form-group">
                         <label>Any Dietary Restrictions?</label>
                         <select
+                            required
                             class="form-control"
                             v-model="diet"
                         >
@@ -51,6 +56,7 @@
                     >
                         <label>Dietary Restrictions:</label>
                         <input
+                            required
                             type="text"
                             class="form-control"
                             v-model="newRsvp.dietRestrictions"
@@ -75,10 +81,7 @@
 import { db } from '../../config/db';
 
 export default {
-    name: 'HomePage',
-    components: {
-        // Navbar,
-    },
+    name: 'RSVP',
     firebase: {
         rsvp: db.ref('rsvp'),
     },
@@ -107,7 +110,7 @@ export default {
             })
             // TODO add better feedback
             alert("Succeessfully added");
-        }
+        },
     }
 }
 
