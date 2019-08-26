@@ -1,13 +1,13 @@
 import Vue from 'vue';
 import router from 'vue-router';
-import HomePage from '@/components/HomePage';
-import Pictures from '@/components/Pictures';
-import Contact from '@/components/Contact';
+import HomePage from '../components/HomePage';
+import Pictures from '../components/Pictures';
+import Contact from '../components/Contact';
 
 Vue.use(router);
 
 export default new router({
-    router: [
+    routes: [
         {
             path: '/',
             name: 'HomePage',
@@ -24,4 +24,5 @@ export default new router({
             component: Contact
         },
     ],
+    mode: 'history',
 });

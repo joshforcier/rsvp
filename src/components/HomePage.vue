@@ -36,13 +36,19 @@
 
                     <div class="form-group">
                         <label>Any Dietary Restrictions?</label>
-                        <select class="form-control" v-model="diet">
+                        <select
+                            class="form-control"
+                            v-model="diet"
+                        >
                             <option :value="false">No</option>
                             <option :value="true">Yes</option>
                         </select>
                     </div>
 
-                    <div class="form-group" v-if="diet === true">
+                    <div
+                        class="form-group"
+                        v-if="diet === true"
+                    >
                         <label>Dietary Restrictions:</label>
                         <input
                             type="text"
@@ -52,7 +58,11 @@
                     </div>
 
                     <div class="form-group">
-                        <input type="submit" class="btn btn-primary" value="SUBMIT"/>
+                        <input
+                            type="submit" 
+                            class="btn btn-primary" 
+                            value="SUBMIT"
+                        />
                     </div>
                 </form>
             </div>
