@@ -19,7 +19,7 @@ export default {
 <style>
 
 .footer {
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
 </style>

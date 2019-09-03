@@ -41,11 +41,12 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
 
 h1 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 html, body {
     font-family: 'Poiret One';
+    font-size: 1.2rem;
 }
 
 </style>
