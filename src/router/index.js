@@ -15,6 +15,11 @@ export default new router({
             component: Home
         },
         {
+            path: '/RSVP',
+            name: 'RSVP',
+            component: RSVP
+        },
+        {
             path: '/pictures',
             name: 'Pictures',
             component: Pictures

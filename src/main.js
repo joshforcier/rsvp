@@ -3,10 +3,12 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
+import BootstrapVue from 'bootstrap-vue'
 import { rtdbPlugin } from 'vuefire';
 
 Vue.use(router);
 Vue.use(rtdbPlugin);
+Vue.use(BootstrapVue);
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */

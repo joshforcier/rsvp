@@ -1,10 +1,10 @@
 <template>
     <div>
-        <div class="container">
+        <div :class="$style.container">
             <img src="../assets/pexels-photo-1563355.jpeg" alt="engagement-photo" style="width:100%;">
-            <div class="centered">WE'RE GETTING MARRIED</div>
+            <div :class="$style.centered">WE'RE GETTING<br/>MARRIED!</div>
         </div>
-        <RSVP />
+        <div>JOSH FORCIER<br/>&<br/>KAYLYN MEYERS</div>
     </div>
 </template>
 
@@ -21,7 +21,7 @@ export default {
 
 </script>
 
-<style>
+<style module>
     .container {
         position: relative;
         text-align: center;
