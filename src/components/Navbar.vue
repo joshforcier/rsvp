@@ -34,29 +34,39 @@
 <script>
 
 export default {
-    name: 'Navbar',
+    name: "Navbar",
     data() {
         return {
             links: [
                 {
                     id: 0,
-                    name: 'Home',
-                    path: '/',
+                    name: "Home",
+                    path: "/",
                 },
                 {
                     id: 1,
-                    name: 'RSVP',
-                    path: '/RSVP',
+                    name: "RSVP",
+                    path: "/RSVP",
                 },
                 {
                     id: 2,
-                    name: 'Pictures',
-                    path: '/pictures',
+                    name: "Directions",
+                    path: "/directions",
                 },
                 {
                     id: 3,
-                    name: 'Contact',
-                    path: '/contact',
+                    name: "Registry",
+                    path: "/registry",
+                },
+                {
+                    id: 4,
+                    name: "Pictures",
+                    path: "/pictures",
+                },
+                {
+                    id: 5,
+                    name: "Contact",
+                    path: "/contact",
                 },
             ],
         }
@@ -66,14 +76,4 @@ export default {
 </script>
 
 <style>
-    .white-space{
-        white-space:pre;
-        color: black;
-    }
-    .text {
-        float: left;
-        text-align: center;
-        font-size: 1em;
-        color: black;
-    }
 </style>

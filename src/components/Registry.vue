@@ -1,11 +1,10 @@
 <template>
     <div>
         <div class="mx-3">
-            <h1>Contact Info</h1>
+            <h1>Registry</h1>
             <div class="text-left">
-                Josh Forcier<br/>
-                320-420-9012<br/>
-                joshforcier@gmail.com<br/>
+                target<br/>
+                amazon<br/>
             </div>
         </div>
     </div>
@@ -14,7 +13,7 @@
 <script>
 
 export default {
-    name: "Contact",
+    name: "Registry",
 }
 
 </script>

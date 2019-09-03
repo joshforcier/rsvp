@@ -2,7 +2,7 @@
     <div class="container">
         <div class="card">
             <div class="card-header">
-                <h3>rsvp</h3>
+                <h1>rsvp</h1>
             </div>
             <div class="card-body">
                 <form 
@@ -66,7 +66,7 @@
                     <div class="form-group">
                         <input
                             type="submit" 
-                            class="btn btn-primary" 
+                            class="btn btn-primary btn-block"
                             value="SUBMIT"
                         />
                     </div>
@@ -78,12 +78,12 @@
 
 <script>
 
-import { db } from '../../config/db';
+import { db } from "../../config/db";
 
 export default {
-    name: 'RSVP',
+    name: "RSVP",
     firebase: {
-        rsvp: db.ref('rsvp'),
+        rsvp: db.ref("rsvp"),
     },
     data () {
         return {
@@ -93,11 +93,11 @@ export default {
             },
             newRsvp: {
                 name: [],
-                dietRestrictions: '',
+                dietRestrictions: "",
                 type: String,
             },
             diet: {
-                resctricted: '',
+                resctricted: "",
                 type: Boolean,
             },
         }
@@ -108,15 +108,22 @@ export default {
                 name: this.newRsvp.name,
                 dietRestrictions: this.newRsvp.dietRestrictions,
             })
-            // TODO add better feedback
-            alert("Succeessfully added");
+            this.showAlert();
+            this.$router.push({ name: 'Directions'});
         },
+        showAlert() {
+            this.$swal({
+                title: "Thank you!",
+                text: "",
+                type: "success",
+                timer: 1500,
+                showConfirmButton: false,
+            });
+        }
     }
 }
 
 </script>
 
 <style scoped>
-
-
 </style>

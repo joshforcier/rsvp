@@ -1,19 +1,23 @@
 <template>
     <div id="app">
         <Navbar />
-  </div>
+        <Footer />
+    </div>
 </template>
 
 <script>
 
-import Home from './components/Home';
-import Navbar from './components/Navbar';
-import RSVP from './components/RSVP';
-import Contact from './components/Contact';
-import Pictures from './components/Pictures';
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import RSVP from "./components/RSVP";
+import Contact from "./components/Contact";
+import Pictures from "./components/Pictures";
+import Directions from "./components/Directions";
+import Registry from "./components/Registry";
+import Footer from "./components/Footer";
 
 export default {
-    name: 'app',
+    name: "app",
     created () {
         document.title = "Josh & Kaylyn";
     },
@@ -23,6 +27,9 @@ export default {
         RSVP,
         Contact,
         Pictures,
+        Directions,
+        Registry,
+        Footer,
     },
 }
 
@@ -30,6 +37,15 @@ export default {
 
 <style lang="css">
 
-@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+
+h1 {
+    font-size: 1.5em;
+}
+
+html, body {
+    font-family: 'Poiret One';
+}
 
 </style>
