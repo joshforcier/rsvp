@@ -2,7 +2,10 @@
     <div class="container">
         <div class="card">
             <div class="card-header">
-                <h1>rsvp</h1>
+                <h1>RSVP</h1>
+                <div class="deadline">
+                    Deadline: June 1st, 2020
+                </div>
             </div>
             <div class="card-body">
                 <form 
@@ -126,4 +129,9 @@ export default {
 </script>
 
 <style scoped>
+
+.deadline {
+    font-size: .8rem;
+}
+
 </style>

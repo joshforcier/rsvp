@@ -58,9 +58,9 @@ export default {
 
 <style scoped>
 
-    .date {
-        font-weight: bold;
-        font-size: 0.9em;
-    }
+.date {
+    font-weight: bold;
+    font-size: 0.9em;
+}
 
 </style>
