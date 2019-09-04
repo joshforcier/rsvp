@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="content">
         <div class="card">
             <div class="card-header">
                 <h1>RSVP</h1>
@@ -8,9 +8,7 @@
                 </div>
             </div>
             <div class="card-body">
-                <form 
-                    v-on:submit.prevent="addRsvp"
-                >
+                <form @submit.prevent="addRsvp">
                     <div class="form-group">
                         <label>How many people are attending?</label>
                         <select

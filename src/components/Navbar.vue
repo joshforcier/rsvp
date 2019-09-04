@@ -5,17 +5,17 @@
             type="light"
             variant="light"
         >
-            <b-navbar-brand  href="#">
+            <b-navbar-brand href="#">
                 <div class="white-space">September 19, 2020</div>
                 <h1 class="header--1 text">JOSH & KAYLYN</h1>
             </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav>
-                    <b-link>
+                    <b-link class="ml-auto">
                         <b-nav-item
                             active-class="active"
-                            class="nav-link"
+                            class="nav-link text-right"
                             v-for="routes in links"
                             :key="routes.id"
                             :to="routes.path"

@@ -47,6 +47,11 @@ h1 {
 html, body {
     font-family: 'Poiret One';
     font-size: 1.1rem;
+    height: 100%;
+}
+
+.content {
+  min-height: calc(100vh - 150px);
 }
 
 </style>

@@ -2,7 +2,7 @@
     <footer>
         <p class="text-center footer">
             <a href="https://github.com/joshforcier/rsvp">
-                Made by Josh Forcier with Vue.js
+                <small>Made by Josh Forcier with Vue.js</small>
             </a>
         </p>
     </footer>
@@ -19,12 +19,7 @@ export default {
 <style>
 
 .footer {
-    font-size: 0.8rem;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+    height: 20px;
 }
 
 </style>

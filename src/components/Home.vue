@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="content">
         <div :class="$style.container">
             <img 
                 src="../assets/pexels-photo-1563355.jpeg"

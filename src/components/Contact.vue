@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="content">
         <div class="mx-3">
             <h1>Contact Info</h1>
             <div class="text-left">
