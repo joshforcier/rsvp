@@ -58,11 +58,14 @@ h3 {
 html, body {
     font-family: 'Poiret One';
     font-size: 1.1rem;
-    height: 100%;
 }
 
 body {
     background-image: url('./assets/green_background.jpg');
+    background-position: 0 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
 .content {
