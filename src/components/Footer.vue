@@ -22,4 +22,8 @@ export default {
     height: 20px;
 }
 
+small {
+    color: black;
+}
+
 </style>
