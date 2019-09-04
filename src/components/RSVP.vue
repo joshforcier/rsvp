@@ -110,7 +110,7 @@ export default {
             this.$firebaseRefs.rsvp.push({
                 name: this.newRsvp.name,
                 dietRestrictions: this.newRsvp.dietRestrictions,
-            })
+            });
             this.showAlert();
             this.$router.push({ name: 'Directions'});
         },
@@ -122,8 +122,8 @@ export default {
                 timer: 1500,
                 showConfirmButton: false,
             });
-        }
-    }
+        },
+    },
 }
 
 </script>

@@ -9,7 +9,6 @@
             <div class="text-center maps-link">
                 <img
                     class="map_img mt-5"
-                    style="cursor: pointer;"
                     @click="mapsSelector()"
                     src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/747/maps-icon.png"
                 />
@@ -43,6 +42,7 @@ export default {
 
 .map_img {
     max-width: 150px;
+    cursor: pointer;
 }
 
 </style>

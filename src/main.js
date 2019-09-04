@@ -5,12 +5,14 @@ import App from "./App";
 import router from "./router";
 import BootstrapVue from "bootstrap-vue"
 import VueSweetalert2 from "vue-sweetalert2";
+import VueGallery from 'vue-gallery'
 import { rtdbPlugin } from "vuefire";
 
 Vue.use(router);
 Vue.use(rtdbPlugin);
 Vue.use(BootstrapVue);
 Vue.use(VueSweetalert2);
+Vue.use(VueGallery);
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
