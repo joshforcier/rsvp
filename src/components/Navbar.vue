@@ -4,6 +4,7 @@
             toggleable="lg"
             type="light"
             variant="light"
+            class="navbar_border"
         >
             <b-navbar-brand href="#">
                 <div class="white-space">September 19, 2020</div>
@@ -84,6 +85,15 @@ export default {
 
 .navbar {
     padding: 0rem 1rem;
+}
+
+.navbar_border {
+    border-bottom: 1px solid black;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    padding: 0.25rem;
 }
 
 </style>
