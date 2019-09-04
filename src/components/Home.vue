@@ -9,9 +9,7 @@
             <h2 
                 :class="$style.were_getting_married"
             >
-                WE'RE GETTING
-                <br/>
-                MARRIED!
+                WE'RE<br/>GETTING<br/>MARRIED!
             </h2>
 
         </div>
@@ -51,7 +49,8 @@ export default {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    white-space: nowrap;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
 }
 
 </style>
