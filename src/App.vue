@@ -14,6 +14,7 @@ import Contact from "./components/Contact";
 import Pictures from "./components/Pictures";
 import Directions from "./components/Directions";
 import Registry from "./components/Registry";
+import Schedule from "./components/Schedule";
 import Footer from "./components/Footer";
 
 export default {
@@ -29,6 +30,7 @@ export default {
         Pictures,
         Directions,
         Registry,
+        Schedule,
         Footer,
     },
 }
@@ -42,6 +44,11 @@ export default {
 
 h1 {
     font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
 }
 
 html, body {
@@ -51,7 +58,20 @@ html, body {
 }
 
 .content {
-  min-height: calc(100vh - 150px);
+    min-height: calc(100vh - 150px);
+}
+
+.text_align_left {
+    display: inline-block;
+    text-align: left;
+}
+
+.text_align_center {
+    text-align: center;
+}
+
+.card-header {
+    padding: 0.25rem;
 }
 
 </style>

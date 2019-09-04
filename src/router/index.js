@@ -6,6 +6,7 @@ import Pictures from "../components/Pictures";
 import Contact from "../components/Contact";
 import Directions from "../components/Directions";
 import Registry from "../components/Registry";
+import Schedule from "../components/schedule";
 
 Vue.use(router);
 
@@ -20,6 +21,11 @@ export default new router({
             path: "/RSVP",
             name: "RSVP",
             component: RSVP
+        },
+        {
+            path: "/schedule",
+            name: "Schedule",
+            component: Schedule
         },
         {
             path: "/directions",

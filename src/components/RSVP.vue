@@ -2,8 +2,8 @@
     <div class="content">
         <div class="card">
             <div class="card-header">
-                <h1>RSVP</h1>
-                <div class="deadline">
+                <h1 class="text_align_center">RSVP</h1>
+                <div class="deadline text_align_center">
                     Deadline: June 1st, 2020
                 </div>
             </div>
@@ -90,7 +90,6 @@ export default {
         return {
             selected: {
                 number: 2,
-                type: Number,
             },
             newRsvp: {
                 name: [],

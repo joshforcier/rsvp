@@ -1,8 +1,8 @@
 <template>
-    <div class="content">
+    <div class="content text_align_center">
         <div class="mx-3">
-            <h1>Directions</h1>
-            <div class="text-left">
+            <h1 class="text_align_center">Directions</h1>
+            <div class="text_align_left">
                 2757 W Deer Path Trail<br/>
                 Janesville, WI 53545
             </div>

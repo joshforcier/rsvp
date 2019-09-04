@@ -7,7 +7,7 @@
         >
             <b-navbar-brand href="#">
                 <div class="white-space">September 19, 2020</div>
-                <h1 class="header--1 text">JOSH & KAYLYN</h1>
+                <h2 class="header--1 text">JOSH & KAYLYN</h2>
             </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
@@ -50,21 +50,26 @@ export default {
                 },
                 {
                     id: 2,
+                    name: "Schedule",
+                    path: "/schedule",
+                },
+                {
+                    id: 3,
                     name: "Directions",
                     path: "/directions",
                 },
                 {
-                    id: 3,
+                    id: 4,
                     name: "Registry",
                     path: "/registry",
                 },
                 {
-                    id: 4,
+                    id: 5,
                     name: "Pictures",
                     path: "/pictures",
                 },
                 {
-                    id: 5,
+                    id: 6,
                     name: "Contact",
                     path: "/contact",
                 },
@@ -76,4 +81,9 @@ export default {
 </script>
 
 <style>
+
+.navbar {
+    padding: 0rem 1rem;
+}
+
 </style>
