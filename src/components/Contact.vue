@@ -1,7 +1,7 @@
 <template>
     <div class="content text_align_center">
         <div class="mx-3 text-center">
-            <h1 class="text_align_center">Contact Info</h1>
+            <h1 class="text_align_center">CONTACT INFO</h1>
             <div class="text_align_left">
                 Josh Forcier<br/>
                 <a href="mailto:joshforcier@gmail.com">joshforcier@gmail.com</a><br/>

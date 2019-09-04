@@ -2,7 +2,7 @@
     <div class="content">
         <div class="card">
             <div class="card-header">
-                <h1 class="text_align_center">RSVP</h1>
+                <h1 class="text_align_center rsvp">RSVP</h1>
                 <div class="deadline text_align_center">
                     Deadline: June 1st, 2020
                 </div>
@@ -129,6 +129,10 @@ export default {
 
 .deadline {
     font-size: .8rem;
+}
+
+.rsvp {
+    padding-top: 0rem;
 }
 
 </style>

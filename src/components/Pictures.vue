@@ -1,7 +1,7 @@
 <template>
     <div class="content">
         <div class="mx-3">
-            <h1 class="text_align_center">Pictures</h1>
+            <h1 class="text_align_center">PICTURES</h1>
         </div>
         <gallery :images="images" :index="index" @close="index = null"></gallery>
         <div

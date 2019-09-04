@@ -51,6 +51,10 @@ h2 {
     font-size: 1.5rem;
 }
 
+h3 {
+    font-size: 1.2rem;
+}
+
 html, body {
     font-family: 'Poiret One';
     font-size: 1.1rem;
