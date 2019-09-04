@@ -19,9 +19,6 @@ import Footer from "./components/Footer";
 
 export default {
     name: "app",
-    created () {
-        document.title = "Josh & Kaylyn";
-    },
     components: {
         Home,
         Navbar,
