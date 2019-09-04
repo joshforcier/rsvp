@@ -6,7 +6,7 @@ import Pictures from "../components/Pictures";
 import Contact from "../components/Contact";
 import Directions from "../components/Directions";
 import Registry from "../components/Registry";
-import Schedule from "../components/schedule";
+import Schedule from "../components/Schedule";
 
 Vue.use(router);
 
