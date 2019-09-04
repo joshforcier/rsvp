@@ -61,6 +61,10 @@ html, body {
     height: 100%;
 }
 
+body {
+    background-image: url('./assets/green_background.jpg');
+}
+
 .content {
     min-height: calc(100vh - 150px);
 }
