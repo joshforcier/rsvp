@@ -16,24 +16,24 @@
 
 <script>
 
-import VueGallery from 'vue-gallery';
+import VueGallery from "vue-gallery";
 
 export default {
     name: "Pictures",
     data: function () {
         return {
             images: [
-                'https://dummyimage.com/800/ffffff/000000',
-                'https://dummyimage.com/1600/ffffff/000000',
-                'https://dummyimage.com/1280/000000/ffffff',
-                'https://dummyimage.com/400/000000/ffffff',
+                "../assets/00100sPORTRAIT_00100_BURST20190408194425664_COVER.jpg",
+                "../assets/00100sPORTRAIT_00100_BURST20190504212244218_COVER.jpg",
+                "../assets/ImageID_36493066.jpg",
+                "../assets/ImageID_36493068.jpg",
             ],
             index: null,
         };
     },
 
     components: {
-        'gallery': VueGallery,
+        "gallery": VueGallery,
     },
 }
 

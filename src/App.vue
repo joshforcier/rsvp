@@ -37,7 +37,7 @@ export default {
 <style lang="css">
 
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poiret+One&display=swap");
 
 h1 {
     font-size: 1.5rem;
@@ -53,12 +53,12 @@ h3 {
 }
 
 html, body {
-    font-family: 'Poiret One';
+    font-family: "Poiret One";
     font-size: 1.1rem;
 }
 
 body {
-    background-image: url('./assets/green_background.jpg');
+    background-image: url("./assets/green_background.jpg");
     background-position: 0 200px;
     background-repeat: no-repeat;
     background-size: cover;

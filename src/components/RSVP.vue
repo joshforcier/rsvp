@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label>Any Dietary Restrictions?</label>
+                        <label>Any Dietary Restrictions(GF, V, Allergies)?</label>
                         <select
                             required
                             class="form-control"
@@ -109,7 +109,7 @@ export default {
                 dietRestrictions: this.newRsvp.dietRestrictions,
             });
             this.showAlert();
-            this.$router.push({ name: 'Directions'});
+            this.$router.push({ name: "Directions"});
         },
         showAlert() {
             this.$swal({
