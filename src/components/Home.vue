@@ -13,13 +13,20 @@
             </h2>
 
         </div>
-        <div class="ml-3">
+        <div class="ml-3 text right">
+            <div class="mt-3">#JoshAndKaylyn</div>
+            <div class="mt-3">September 19, 2020</div>
+            <div class="mt-3">Jaynesville, WI</div>
+        </div>
+        <hr />
+        <div class="ml-3 text">
             <div class="mt-3">HOW WE MET</div>
             <div class="date">June 2015</div>
 
             <div class="mt-3">THE PROPOSAL</div>
             <div class="date">May 2019</div>
         </div>
+        <hr />
     </div>
 </template>
 
@@ -60,6 +67,23 @@ export default {
 .date {
     font-weight: bold;
     font-size: 0.9em;
+}
+
+hr {
+    border: none;
+    width: 90%;
+    background-color: #333; /* Modern Browsers */
+    opacity: 0.5;
+    height: 1px;
+}
+
+.right {
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.text {
+    font-size: 1.5rem;
 }
 
 </style>
