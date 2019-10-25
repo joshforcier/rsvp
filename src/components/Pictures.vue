@@ -9,7 +9,7 @@
             v-for="(image, imageIndex) in images"
             :key="imageIndex"
             @click="index = imageIndex"
-            :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px' }"
+            :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px', }"
         />
     </div>
 </template>
@@ -23,10 +23,10 @@ export default {
     data: function () {
         return {
             images: [
-                "../assets/00100sPORTRAIT_00100_BURST20190408194425664_COVER.jpg",
-                "../assets/00100sPORTRAIT_00100_BURST20190504212244218_COVER.jpg",
-                "../assets/ImageID_36493066.jpg",
-                "../assets/ImageID_36493068.jpg",
+                '/static/images/ImageID_36493066.jpg',
+                '/static/images/ImageID_36493068.jpg',
+                '/static/images/00100sPORTRAIT_00100_BURST20190408194425664_COVER.jpg',
+                '/static/images/00100sPORTRAIT_00100_BURST20190504212244218_COVER.jpg',
             ],
             index: null,
         };
@@ -44,9 +44,14 @@ export default {
 .image {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top;
     border: 1px solid #ebebeb;
-    margin: 5px auto;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.close {
+    color: white !important;
 }
 
 </style>

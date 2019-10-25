@@ -2,7 +2,7 @@
     <div class="content">
         <div :class="$style.container">
             <img 
-                src="../assets/pexels-photo-1563355.jpeg"
+                src="/static/images/ImageID_36493066.jpg"
                 alt="engagement-photo"
                 style="width:100%;"
             >
