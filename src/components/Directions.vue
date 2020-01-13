@@ -3,7 +3,7 @@
         <div class="mx-3">
             <h1 class="text_align_center">DIRECTIONS</h1><br/>
             <h3>CEREMONY/RECEPTION</h3>
-            <div class="text_align_left">
+            <div class="text-center">
                 2757 W Deer Path Trail<br/>
                 Janesville, WI 53545
             </div>
@@ -16,13 +16,15 @@
             </div>
 
             <h3 class="mt-5">HOTEL</h3>
-            <div class="text_align_left">
+            <div class="text-center">
+                TownePlace Suites<br/>
+                2706 Pontiac Place<br/>
                 Janesville, WI 53545
             </div>
             <div class="text-center maps-link">
                 <img
                     class="map_img mt-1"
-                    @click="mapsSelector('2757+w+deer+path+trail,+janesville+wi')"
+                    @click="mapsSelector('2706+pontiac+place,+janesville+wi')"
                     src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/747/maps-icon.png"
                 />
             </div>

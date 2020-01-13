@@ -7,6 +7,7 @@ import Contact from "../components/Contact";
 import Directions from "../components/Directions";
 import Registry from "../components/Registry";
 import Schedule from "../components/Schedule";
+import Hotel from "../components/Hotel";
 
 Vue.use(router);
 
@@ -31,6 +32,11 @@ export default new router({
             path: "/directions",
             name: "Directions",
             component: Directions
+        },
+        {
+            path: "/hotel",
+            name: "Hotel",
+            component: Hotel
         },
         {
             path: "/registry",

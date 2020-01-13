@@ -23,6 +23,7 @@ export default {
     data: function () {
         return {
             images: [
+                '/static/images/DSC_9950-min.jpg',
                 '/static/images/ImageID_36493066.jpg',
                 '/static/images/ImageID_36493068.jpg',
                 '/static/images/00100sPORTRAIT_00100_BURST20190408194425664_COVER.jpg',

@@ -7,27 +7,13 @@
 
 <script>
 
-import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import RSVP from "./components/RSVP";
-import Contact from "./components/Contact";
-import Pictures from "./components/Pictures";
-import Directions from "./components/Directions";
-import Registry from "./components/Registry";
-import Schedule from "./components/Schedule";
 import Footer from "./components/Footer";
 
 export default {
     name: "app",
     components: {
-        Home,
         Navbar,
-        RSVP,
-        Contact,
-        Pictures,
-        Directions,
-        Registry,
-        Schedule,
         Footer,
     },
 }
@@ -37,7 +23,6 @@ export default {
 <style lang="css">
 
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-@import url("https://fonts.googleapis.com/css?family=Poiret+One&display=swap");
 
 h1 {
     font-size: 1.5rem;
@@ -53,7 +38,6 @@ h3 {
 }
 
 html, body {
-    font-family: "Poiret One";
     font-size: 1.1rem;
 }
 

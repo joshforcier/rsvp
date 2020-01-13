@@ -16,7 +16,7 @@
         <div class="ml-3 text right">
             <div class="mt-3">#JoshAndKaylyn</div>
             <div class="mt-3">September 19, 2020</div>
-            <div class="mt-3">Jaynesville, WI</div>
+            <div class="mt-3">Janesville, WI</div>
         </div>
         <hr />
         <div class="ml-3 text">
@@ -45,6 +45,8 @@ export default {
 
 <style module>
 
+@import url("https://fonts.googleapis.com/css?family=Poiret+One&display=swap");
+
 .container {
     position: relative;
     text-align: center;
@@ -52,6 +54,7 @@ export default {
 }
 
 .were_getting_married {
+    font-family: "Poiret One";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -63,6 +66,10 @@ export default {
 </style>
 
 <style scoped>
+
+.content {
+    font-family: "Poiret One";
+}
 
 .date {
     font-weight: bold;

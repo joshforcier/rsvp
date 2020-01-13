@@ -61,16 +61,21 @@ export default {
                 },
                 {
                     id: 4,
+                    name: "Hotel",
+                    path: "/hotel",
+                },
+                {
+                    id: 5,
                     name: "Registry",
                     path: "/registry",
                 },
                 {
-                    id: 5,
+                    id: 6,
                     name: "Pictures",
                     path: "/pictures",
                 },
                 {
-                    id: 6,
+                    id: 7,
                     name: "Contact",
                     path: "/contact",
                 },
@@ -82,9 +87,14 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Poiret+One&display=swap");
 
 .navbar {
     padding: 0rem 1rem;
+}
+
+.navbar-brand {
+    font-family: "Poiret One";
 }
 
 .navbar_border {
