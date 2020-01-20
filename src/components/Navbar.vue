@@ -15,8 +15,8 @@
                 <b-navbar-nav>
                     <b-link class="ml-auto">
                         <b-nav-item
-                            active-class="active"
-                            class="nav-link text-right"
+                            
+                            class="nav-link"
                             v-for="routes in links"
                             :key="routes.id"
                             :to="routes.path"
@@ -104,6 +104,17 @@ export default {
 .nav-link {
     font-size: 1.5rem;
     padding: 0.25rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .nav-link {
+        display: inline;
+        padding: 0 0 0 .5rem !important;
+    }
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 </style>

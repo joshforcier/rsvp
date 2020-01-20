@@ -36,6 +36,7 @@ export default {
 
 .width{
     min-width: 260px;
+    margin-left: 20px;
 }
 
 </style>

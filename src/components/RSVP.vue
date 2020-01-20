@@ -135,4 +135,11 @@ export default {
     padding-top: 0rem;
 }
 
+@media screen and (min-width: 1024px) {
+    .card-body {
+        width: 50%;
+        margin: auto;
+    }
+}
+
 </style>

@@ -1,8 +1,11 @@
 <template>
     <div class="content">
-        <div :class="$style.container">
+        <div
+            :class="$style.container"
+            class="image"
+        >
             <img 
-                src="/static/images/ImageID_36493066.jpg"
+                src="/static/images/ImageID_36493067.jpg"
                 alt="engagement-photo"
                 style="width:100%;"
             >
@@ -11,7 +14,6 @@
             >
                 WE'RE<br/>GETTING<br/>MARRIED!
             </h2>
-
         </div>
         <div class="ml-3 text right">
             <div class="mt-3">#JoshAndKaylyn</div>
@@ -63,6 +65,12 @@ export default {
     letter-spacing: 0.3rem;
 }
 
+@media screen and (min-width: 1024px) {
+    .were_getting_married {
+        font-size: 4rem;
+    }
+}
+
 </style>
 
 <style scoped>
@@ -79,7 +87,7 @@ export default {
 hr {
     border: none;
     width: 90%;
-    background-color: #333; /* Modern Browsers */
+    background-color: #333;
     opacity: 0.5;
     height: 1px;
 }
@@ -91,6 +99,10 @@ hr {
 
 .text {
     font-size: 1.5rem;
+}
+
+img {
+    margin-top: 0px;
 }
 
 </style>

@@ -3,14 +3,16 @@
         <div class="mx-3">
             <h1 class="text_align_center">PICTURES</h1>
         </div>
-        <gallery :images="images" :index="index" @close="index = null"></gallery>
-        <div
-            class="image"
-            v-for="(image, imageIndex) in images"
-            :key="imageIndex"
-            @click="index = imageIndex"
-            :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px', }"
-        />
+        <div class="images">
+            <gallery :images="images" :index="index" @close="index = null"></gallery>
+            <div
+                class="image"
+                v-for="(image, imageIndex) in images"
+                :key="imageIndex"
+                @click="index = imageIndex"
+                :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px', }"
+            />
+        </div>
     </div>
 </template>
 
@@ -51,8 +53,20 @@ export default {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+@media screen and (min-width: 1024px) {
+    .images {
+        display: flex;
+        width: 75%;
+        margin: auto;
+    }
+    .image {
+        margin: 10px;
+    }
+}
+
 .close {
     color: white !important;
 }
+
 
 </style>
