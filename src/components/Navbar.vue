@@ -15,7 +15,6 @@
                 <b-navbar-nav>
                     <b-link class="ml-auto">
                         <b-nav-item
-                            
                             class="nav-link"
                             v-for="routes in links"
                             :key="routes.id"

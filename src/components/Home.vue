@@ -2,7 +2,6 @@
     <div class="content">
         <div
             :class="$style.container"
-            class="image"
         >
             <img 
                 src="/static/images/ImageID_36493067.jpg"
