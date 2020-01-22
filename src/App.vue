@@ -30,11 +30,11 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 html, body {

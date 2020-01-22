@@ -1,7 +1,7 @@
 <template>
     <div class="content text_align_center">
         <div class="mx-3 text-center">
-            <h1 class="text_align_center">HOTEL</h1>
+            <h1 class="text_align_center">Hotel</h1>
 
             <h3 class="text_align_center">TownePlace Suites</h3>
             <img

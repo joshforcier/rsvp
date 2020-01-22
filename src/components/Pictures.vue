@@ -1,7 +1,7 @@
 <template>
     <div class="content">
         <div class="mx-3">
-            <h1 class="text_align_center">PICTURES</h1>
+            <h1 class="text_align_center">Our Pictures</h1>
         </div>
         <div class="images">
             <gallery :images="images" :index="index" @close="index = null"></gallery>
@@ -50,7 +50,7 @@ export default {
     background-position: center top;
     border: 1px solid #ebebeb;
     margin: 10px auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.09);
 }
 
 @media screen and (min-width: 1024px) {

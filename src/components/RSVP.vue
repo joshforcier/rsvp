@@ -1,78 +1,76 @@
 <template>
     <div class="content">
-        <div class="card">
-            <div class="card-header">
-                <h1 class="text_align_center rsvp">RSVP</h1>
-                <div class="deadline text_align_center">
-                    Deadline: June 1st, 2020
-                </div>
+        <div>
+            <h1 class="text_align_center rsvp">RSVP</h1>
+            <div class="deadline text_align_center">
+                Deadline: June 1st, 2020
             </div>
-            <div class="card-body">
-                <form @submit.prevent="addRsvp">
-                    <div class="form-group">
-                        <label>How many people are attending?</label>
-                        <select
-                            required
-                            class="form-control"
-                            v-model="selected"
-                        >
-                            <option
-                                v-for="n in 6"
-                                :key="n"
-                                :value="{ number: n }"
-                            >
-                                {{ n }}
-                            </option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Names:</label>
-                        <input
-                            required
-                            type="text"
-                            class="form-control"
-                            v-for="n in Number(selected.number)"
-                            v-model="newRsvp.name[n]"
-                            :index="n"
-                            :key="n"
-                        />
-                    </div>
-
-                    <div class="form-group">
-                        <label>Any Dietary Restrictions(GF, V, Allergies)?</label>
-                        <select
-                            required
-                            class="form-control"
-                            v-model="diet"
-                        >
-                            <option :value="false">No</option>
-                            <option :value="true">Yes</option>
-                        </select>
-                    </div>
-
-                    <div
-                        class="form-group"
-                        v-if="diet === true"
+        </div>
+        <div class="card-body">
+            <form @submit.prevent="addRsvp">
+                <div class="form-group">
+                    <label>How many people are attending?</label>
+                    <select
+                        required
+                        class="form-control"
+                        v-model="selected"
                     >
-                        <label>Dietary Restrictions:</label>
-                        <input
-                            required
-                            type="text"
-                            class="form-control"
-                            v-model="newRsvp.dietRestrictions"
-                        />
-                    </div>
+                        <option
+                            v-for="n in 6"
+                            :key="n"
+                            :value="{ number: n }"
+                        >
+                            {{ n }}
+                        </option>
+                    </select>
+                </div>
 
-                    <div class="form-group">
-                        <input
-                            type="submit" 
-                            class="btn btn-primary btn-block"
-                            value="SUBMIT"
-                        />
-                    </div>
-                </form>
-            </div>
+                <div class="form-group">
+                    <label>Names:</label>
+                    <input
+                        required
+                        type="text"
+                        class="form-control names"
+                        v-for="n in Number(selected.number)"
+                        v-model="newRsvp.name[n]"
+                        :index="n"
+                        :key="n"
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label>Any Dietary Restrictions(GF, V, Allergies)?</label>
+                    <select
+                        required
+                        class="form-control"
+                        v-model="diet"
+                    >
+                        <option :value="false">No</option>
+                        <option :value="true">Yes</option>
+                    </select>
+                </div>
+
+                <div
+                    class="form-group"
+                    v-if="diet === true"
+                >
+                    <label>Dietary Restrictions:</label>
+                    <input
+                        required
+                        type="text"
+                        class="form-control"
+                        v-model="newRsvp.dietRestrictions"
+                    />
+                </div>
+
+                <div class="form-group">
+                    <input
+                        type="submit" 
+                        class="btn btn-primary btn-submit"
+                        value="Submit"
+                    />
+                </div>
+            </form>
         </div>
     </div>
 </template>
@@ -129,10 +127,11 @@ export default {
 
 .deadline {
     font-size: .8rem;
+    color: red;
 }
 
 .rsvp {
-    padding-top: 0rem;
+    padding-top: 1rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -140,6 +139,26 @@ export default {
         width: 50%;
         margin: auto;
     }
+}
+
+.card-body {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    margin: 20px auto 20px auto;
+}
+
+input, select {
+    border-radius: 20px;
+}
+
+.btn-submit {
+    width: 30%;
+    margin : 0 auto;
+    display: block;
+}
+
+.names {
+    margin-bottom: 5px;
 }
 
 </style>

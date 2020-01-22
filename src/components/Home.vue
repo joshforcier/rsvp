@@ -12,6 +12,7 @@
                 :class="$style.were_getting_married"
             >
                 WE'RE<br/>GETTING<br/>MARRIED!
+                
             </h2>
         </div>
         <div class="ml-3 text right">

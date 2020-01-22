@@ -94,10 +94,12 @@ export default {
 
 .navbar-brand {
     font-family: "Poiret One";
+    font-size: 1rem;
 }
 
 .navbar_border {
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.09);
 }
 
 .nav-link {
@@ -109,11 +111,17 @@ export default {
     .nav-link {
         display: inline;
         padding: 0 0 0 .5rem !important;
+        font-size: 1rem;
     }
 }
 
 a:hover {
     text-decoration: none;
+}
+
+.router-link-exact-active {
+    border-bottom: 2px solid #2186EB;
+    line-height: 0.7em;
 }
 
 </style>
