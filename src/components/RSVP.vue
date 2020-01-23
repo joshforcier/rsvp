@@ -86,6 +86,7 @@
 <script>
 
 import { db } from "../../config/db";
+import Swal from 'sweetalert2';
 
 export default {
     name: "RSVP",
@@ -118,10 +119,10 @@ export default {
             // this.$router.push({ name: "Directions"});
         },
         showAlert() {
-            this.$swal({
+            Swal.fire({
                 title: "Thank you!",
                 text: "",
-                type: "success",
+                icon: "success",
                 timer: 1500,
                 showConfirmButton: false,
             });
