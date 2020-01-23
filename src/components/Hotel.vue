@@ -42,7 +42,7 @@ export default {
     margin : 0 auto;
     display: block;
     background-color: #03449E;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .btn-submit:hover {

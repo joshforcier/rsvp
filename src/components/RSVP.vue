@@ -163,7 +163,7 @@ export default {
 }
 
 input, select {
-    border-radius: 20px;
+    border-radius: 10px;
     margin: auto;
 }
 
