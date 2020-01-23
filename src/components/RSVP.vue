@@ -142,18 +142,19 @@ export default {
     padding-top: 1rem;
 }
 
-@media screen and (min-width: 1024px) {
-    .card-body {
-        width: 50%;
-        margin: auto;
-    }
-}
-
 .card-body {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.09);
     border-radius: 10px;
     margin: 20px auto 20px auto;
     background-color: white;
+    width: 90%;
+}
+
+@media screen and (min-width: 1024px) {
+    .card-body {
+        width: 50%;
+        margin: auto;
+    }
 }
 
 .form-item {
