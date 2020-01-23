@@ -36,15 +36,9 @@ export default {
 </script>
 
 <style>
-@media screen and (min-width: 1024px) {
-    .hotel {
-        width: 50%;
-        margin: auto;
-    }
-}
 
 .btn-submit {
-    width: 30%;
+    width: 60%;
     margin : 0 auto;
     display: block;
     background-color: #03449E;
@@ -53,6 +47,17 @@ export default {
 
 .btn-submit:hover {
     background-color: #0967D2;
+}
+
+@media screen and (min-width: 1024px) {
+    .hotel {
+        width: 50%;
+        margin: auto;
+    }
+
+    .btn-submit {
+        width: 30%;
+    }
 }
 
 .hotel__container {
