@@ -115,7 +115,7 @@ export default {
                 dietRestrictions: this.newRsvp.dietRestrictions,
             });
             this.showAlert();
-            this.$router.push({ name: "Directions"});
+            // this.$router.push({ name: "Directions"});
         },
         showAlert() {
             this.$swal({
