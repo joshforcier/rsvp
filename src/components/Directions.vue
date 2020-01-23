@@ -113,7 +113,7 @@ export default {
 
 .map_img {
     width: 100%;
-    max-height: 160px;
+    max-height: 200px;
     cursor: pointer;
     border-radius: 10px;
 }

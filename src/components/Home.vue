@@ -79,6 +79,7 @@ export default {
     position: relative;
     text-align: center;
     color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.09);
 }
 
 .were_getting_married {
