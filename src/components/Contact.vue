@@ -2,16 +2,28 @@
     <div class="content">
         <div class="mx-3">
             <h1 class="text_align_center contactUs">Contact Us</h1>
-            <div class=" contacts">
+            <div class="contacts">
                 <div class="contact left">
-                    Josh Forcier<br/>
-                    <a href="mailto:joshforcier@gmail.com">joshforcier@gmail.com</a><br/>
-                    <a href="tel:+1-320-420-9012">320-420-9012</a><br/>
+                    <strong>Josh Forcier</strong>
+                    <div class="contactInfo">
+                        <img class="contactIcon" src="../assets/icons/mail.svg" alt="">
+                        <a href="mailto:joshforcier@gmail.com">joshforcier@gmail.com</a>
+                    </div>
+                    <div class="contactInfo">
+                        <img class="contactIcon" src="../assets/icons/phone.svg" alt="">
+                        <a href="tel:+1-320-420-9012">320-420-9012</a>
+                    </div>
                 </div>
                 <div class="contact right">
-                    Kaylyn Meyers<br/>
-                    <a href="mailto:kaylynmeyers@gmail.com">kaylynmeyers@gmail.com</a><br/>
-                    <a href="tel:+1-608-931-6460">608-931-6460</a><br/>
+                    <strong>Kaylyn Meyers</strong>
+                    <div class="contactInfo">
+                        <img class="contactIcon" src="../assets/icons/mail.svg" alt="">
+                        <a href="mailto:kaylynmeyers@gmail.com">kaylynmeyers@gmail.com</a>
+                    </div>
+                    <div class="contactInfo">
+                        <img class="contactIcon" src="../assets/icons/phone.svg" alt="">
+                        <a href="tel:+1-608-931-6460">608-931-6460</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -34,11 +46,16 @@ export default {
     padding: 10px;
     width: 300px;
     margin: 10px auto;
+    background-color: white;
 }
 
 .contacts {
     display: grid;
     margin: auto;
+}
+
+.contactInfo {
+    display: flex;
 }
 
 @media screen and (min-width: 1024px) {
@@ -50,6 +67,15 @@ export default {
 
 .contactUs {
     margin-bottom: 5%;
+}
+
+.contactIcon {
+    width: 15px;
+    margin-right: 10px;
+}
+
+a {
+    color: grey;
 }
 
 </style>

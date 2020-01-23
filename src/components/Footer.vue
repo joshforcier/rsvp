@@ -18,8 +18,15 @@ export default {
 
 <style>
 
+footer {
+    padding: 6rem 0 4rem 0;
+    background-image: url("../assets/icons/footer.svg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
 .footer {
-    height: 20px;
+    margin-bottom: -10%;
 }
 
 small {

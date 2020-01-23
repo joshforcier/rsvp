@@ -42,11 +42,7 @@ html, body {
 }
 
 body {
-    background-image: url("./assets/green_background.jpg");
-    background-position: 0 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
+    background-color: #f8f9fa;
 }
 
 .content {

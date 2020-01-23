@@ -9,63 +9,71 @@
         <div class="card-body">
             <form @submit.prevent="addRsvp">
                 <div class="form-group">
-                    <label>How many people are attending?</label>
-                    <select
-                        required
-                        class="form-control"
-                        v-model="selected"
-                    >
-                        <option
-                            v-for="n in 6"
-                            :key="n"
-                            :value="{ number: n }"
+                    <div class="form-item">
+                        <label>How many people are attending?</label>
+                        <select
+                            required
+                            class="form-control"
+                            v-model="selected"
                         >
-                            {{ n }}
-                        </option>
-                    </select>
+                            <option
+                                v-for="n in 6"
+                                :key="n"
+                                :value="{ number: n }"
+                            >
+                                {{ n }}
+                            </option>
+                        </select>
+                    </div>
                 </div>
 
                 <div class="form-group">
-                    <label>Names:</label>
-                    <input
-                        required
-                        type="text"
-                        class="form-control names"
-                        v-for="n in Number(selected.number)"
-                        v-model="newRsvp.name[n]"
-                        :index="n"
-                        :key="n"
-                    />
+                    <div class="form-item">
+                        <label>Names:</label>
+                        <input
+                            required
+                            type="text"
+                            class="form-control names"
+                            v-for="n in Number(selected.number)"
+                            v-model="newRsvp.name[n]"
+                            :index="n"
+                            :key="n"
+                        />
+                    </div>
                 </div>
 
                 <div class="form-group">
-                    <label>Any Dietary Restrictions(GF, V, Allergies)?</label>
-                    <select
-                        required
-                        class="form-control"
-                        v-model="diet"
-                    >
-                        <option :value="false">No</option>
-                        <option :value="true">Yes</option>
-                    </select>
+                    <div class="form-item">
+                        <label>Any Dietary Restrictions(GF, V, Allergies)?</label>
+                        <select
+                            required
+                            class="form-control"
+                            v-model="diet"
+                        >
+                            <option :value="false">No</option>
+                            <option :value="true">Yes</option>
+                        </select>
+                    </div>
                 </div>
 
                 <div
                     class="form-group"
                     v-if="diet === true"
                 >
-                    <label>Dietary Restrictions:</label>
-                    <input
-                        required
-                        type="text"
-                        class="form-control"
-                        v-model="newRsvp.dietRestrictions"
-                    />
+                    <div class="form-item">
+                        <label>Dietary Restrictions:</label>
+                        <input
+                            required
+                            type="text"
+                            class="form-control"
+                            v-model="newRsvp.dietRestrictions"
+                        />
+                    </div>
                 </div>
 
                 <div class="form-group">
                     <input
-                        type="submit" 
+                        type="submit"
                         class="btn btn-primary btn-submit"
                         value="Submit"
                     />
@@ -145,16 +153,32 @@ export default {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.09);
     border-radius: 10px;
     margin: 20px auto 20px auto;
+    background-color: white;
+}
+
+.form-item {
+    width: 75%;
+    margin: auto;
 }
 
 input, select {
     border-radius: 20px;
+    margin: auto;
+}
+
+label {
+    /* margin: auto; */
 }
 
 .btn-submit {
     width: 30%;
     margin : 0 auto;
     display: block;
+    background-color: #03449E;
+}
+
+.btn-submit:hover {
+    background-color: #0967D2;
 }
 
 .names {

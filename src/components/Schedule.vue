@@ -1,24 +1,38 @@
 <template>
-    <div class="content text_align_center">
-        <div>
-            <h1 class="text_align_center">SCHEDULE</h1>
-            
-            <div class="text_align_left mt-3 width">
-                <H3>WELCOME DRINKS</H3>
-                <div>Friday, September 18, 2020</div>
-                <div>8:00pm</div>
+    <div class="content text_align_center container">
+        <h1 class="text_align_center">Schedule</h1>
+        <div class="schedule">
+            <div class="text_align_left mt-3 event">
+                <span class="icons">
+                    <img src="../assets/icons/drinks.svg" alt="">
+                </span>
+                <div class="info">
+                    <H3 class="title">WELCOME DRINKS</H3>
+                    <div class="date">Friday, September 18, 2020</div>
+                    <div class="time">8:00pm</div>
+                </div>
             </div>
 
-            <div class="text_align_left mt-5 width">
-                <H3>CEREMONY</H3>
-                <div>Saturday, September 19, 2020</div>
-                <div>3:00pm</div>
+            <div class="text_align_left mt-3 event">
+                <span class="icons">
+                    <img src="../assets/icons/broom.svg" alt="">
+                </span>
+                <div class="info">
+                    <H3 class="title">CEREMONY</H3>
+                    <div class="date">Saturday, September 19, 2020</div>
+                    <div class="time">3:00pm</div>
+                </div>
             </div>
 
-            <div class="text_align_left mt-5 width">
-                <H3>RECEPTION</H3>
-                <div>Saturday, September 19, 2020</div>
-                <div>5:00pm - 1:00am</div>
+            <div class="text_align_left mt-3 event">
+                <span class="icons">
+                    <img src="../assets/icons/registry-office.svg" alt="">
+                </span>
+                <div class="info">
+                    <H3 class="title">RECEPTION</H3>
+                    <div class="date">Saturday, September 19, 2020</div>
+                    <div class="time">5:00pm - 1:00am</div>
+                </div>
             </div>
         </div>
     </div>
@@ -34,9 +48,50 @@ export default {
 
 <style>
 
-.width{
+@media screen and (min-width: 1024px) {
+    .schedule {
+        display: grid;
+    }
+}
+
+.event {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     min-width: 260px;
-    margin-left: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    font-size: 0.9rem;
+    background-color: white;
+}
+
+@media screen and (min-width: 1024px) {
+    .event {
+        width: 420px;
+    }
+}
+
+.info {
+    width: 260px;
+}
+
+.title {
+    color: #03449E;
+}
+
+.time {
+    color: grey;
+}
+
+.icons img {
+    width: 100%;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    width: 75%;
 }
 
 </style>

@@ -1,55 +1,67 @@
 <template>
     <div class="content text_align_center">
         <div class="mx-3">
-            <h1 class="text_align_center">DIRECTIONS</h1><br/>
-            <div class="container">
-                <div>
-                    <h3>WELCOME DRINKS</h3>
-                    <div class="text-center">
-                        5010 N Buckskin Drive<br/>
-                        Janesville, WI 53546<br/><br/>
-
+            <h1 class="text_align_center">Directions</h1>
+            <div class="dir-container">
+                <div class="text_align_left mt-3 directions">
+                    <div class="dir-text">
+                        <span class="icons">
+                            <img src="../assets/icons/drinks.svg" alt="">
+                        </span>
+                        <div class="dir-info">
+                            <h3 class="dir-title">WELCOME DRINKS</h3>
+                            <div class="street">5010 N Buckskin Drive</div>
+                            <div class="city">Janesville, WI 53546</div>
+                        </div> 
                     </div>
-                    <div class="text-center maps-link">
+                    <div class="maps-link">
                         <img
                             class="map_img mt-1"
-                            @click="mapsSelector('2757+w+deer+path+trail,+janesville+wi')"
-                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/747/maps-icon.png"
+                            @click="mapsSelector('5010+n+buckskin+drive,+janesville+wi')"
+                            src="../assets/mask-group-2.png"
                         />
                     </div>
                 </div>
 
-                <div class="item">
-                    <h3>CEREMONY/RECEPTION</h3>
-                    <div class="text-center">
-                        2757 W Deer Path Trail<br/>
-                        Janesville, WI 53545<br/><br/>
+                <div class="text_align_left mt-3 directions">
+                    <div class="dir-text">
+                        <span class="icons">
+                            <img src="../assets/icons/registry-office.svg" alt="">
+                        </span>
+                        <div class="dir-info">
+                            <h3 class="dir-title">CEREMONY/RECEPTION</h3>
+                            <div class="street">2757 W Deer Path Trail</div>
+                            <div class="city">Janesville, WI 53545</div>
+                        </div>
                     </div>
-                    <div class="text-center maps-link">
+                    <div class="maps-link">
                         <img
                             class="map_img mt-1"
                             @click="mapsSelector('2757+w+deer+path+trail,+janesville+wi')"
-                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/747/maps-icon.png"
+                            src="../assets/mask-group-3.png"
                         />
                     </div>
                 </div>
 
-                <div>
-                    <h3 class="mt-5">HOTEL</h3>
-                    <div class="text-center">
-                        TownePlace Suites<br/>
-                        2706 Pontiac Place<br/>
-                        Janesville, WI 53545
+                <div class="text_align_left mt-3 directions">
+                    <div class="dir-text">
+                        <span class="icons">
+                            <img src="../assets/icons/hotel.svg" alt="">
+                        </span>
+                        <div class="dir-info">
+                            <h3 class="dir-title">HOTEL</h3>
+                            <div class="street">2706 Pontiac Place</div>
+                            <div class="city">Janesville, WI 53545</div>
+                        </div>
                     </div>
-                    <div class="text-center maps-link">
+                    <div class="maps-link">
                         <img
                             class="map_img mt-1"
                             @click="mapsSelector('2706+pontiac+place,+janesville+wi')"
-                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/747/maps-icon.png"
+                            src="../assets/mask-group-4.png"
                         />
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -79,19 +91,62 @@ export default {
 <style>
 
 @media screen and (min-width: 1024px) {
-    .container {
-        column-count: 3;
+    .dir-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .item {
-        display: inline-block;
+    .directions {
+        width: 75%;
+        margin: auto;
     }
 }
 
+.dir-info {
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.dir-info h3 {
+    font-size: 0.9rem;
+}
+
 .map_img {
-    max-width: 150px;
+    width: 100%;
+    max-height: 160px;
     cursor: pointer;
-    margin-bottom: 10%;
+    border-radius: 10px;
+}
+
+.maps-link {
+    margin-top: 10px;
+}
+
+.directions {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+.dir-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.icons img {
+    width: 90%;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    max-height: 75px;
+}
+
+.dir-title {
+    color: #03449E;
 }
 
 </style>

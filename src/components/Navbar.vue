@@ -115,12 +115,12 @@ export default {
     }
 }
 
-a:hover {
+.navbar_border a:hover {
     text-decoration: none;
 }
 
 .router-link-exact-active {
-    border-bottom: 2px solid #2186EB;
+    border-bottom: 2px solid #03449E;
     line-height: 0.7em;
 }
 
