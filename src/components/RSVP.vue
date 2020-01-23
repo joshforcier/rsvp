@@ -166,10 +166,6 @@ input, select {
     margin: auto;
 }
 
-label {
-    /* margin: auto; */
-}
-
 .btn-submit {
     width: 30%;
     margin : 0 auto;

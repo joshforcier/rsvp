@@ -14,7 +14,7 @@
                     Janesville, WI 53545<br />
                     (608) 898-4200
                 </div>
-                <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1579538297375&key=GRP&app=resvlink">Hotel Reservation</a><br /><br />
+                <a class="btn btn-primary btn-submit" href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1579538297375&key=GRP&app=resvlink">Hotel Reservation</a><br /><br />
 
                 <p class="hotelInfo">
                         For your convenience, a block of rooms has been reserved at TownePlace Suites in Janesville. 
@@ -41,6 +41,18 @@ export default {
         width: 50%;
         margin: auto;
     }
+}
+
+.btn-submit {
+    width: 30%;
+    margin : 0 auto;
+    display: block;
+    background-color: #03449E;
+    border-radius: 20px;
+}
+
+.btn-submit:hover {
+    background-color: #0967D2;
 }
 
 .hotel__container {
