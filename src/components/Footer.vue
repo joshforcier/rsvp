@@ -1,10 +1,11 @@
 <template>
     <footer>
         <p class="text-center footer">
-            <a href="https://github.com/joshforcier/rsvp">
+            <!-- <a href="https://github.com/joshforcier/rsvp">
                 <small>Made by Josh Forcier with Vue.js</small>
-            </a>
+            </a> -->
         </p>
+        <img src="../assets/icons/Asset2.svg" alt="">
     </footer>
 </template>
 
@@ -18,13 +19,13 @@ export default {
 
 <style>
 
-footer {
-    padding: 6rem 0 4rem 0;
-    background-image: url("../assets/icons/footer.svg");
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
+footer img {
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.6;
 }
+
 .footer {
     margin-bottom: -10%;
 }

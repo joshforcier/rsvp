@@ -77,7 +77,7 @@ export default {
 }
 
 .title {
-    color: #03449E;
+    color: #7EA2A1;
 }
 
 .time {

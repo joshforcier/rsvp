@@ -146,7 +146,7 @@ export default {
 }
 
 .dir-title {
-    color: #03449E;
+    color: #7EA2A1;
 }
 
 </style>

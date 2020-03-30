@@ -120,7 +120,7 @@ export default {
 }
 
 .router-link-exact-active {
-    border-bottom: 2px solid #03449E;
+    border-bottom: 2px solid #7EA2A1;
     line-height: 0.7em;
 }
 

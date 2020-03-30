@@ -74,7 +74,7 @@
                 <div class="form-group">
                     <input
                         type="submit"
-                        class="btn btn-primary btn-submit"
+                        class="btn btn-submit"
                         value="Submit"
                     />
                 </div>
@@ -172,11 +172,12 @@ input, select {
     width: 30%;
     margin : 0 auto;
     display: block;
-    background-color: #03449E;
+    background-color: #7EA2A1;
+    color: white;
 }
 
 .btn-submit:hover {
-    background-color: #0967D2;
+    background-color: #b5c9c9;
 }
 
 .names {
