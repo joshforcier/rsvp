@@ -8,6 +8,7 @@ import Directions from "../components/Directions";
 import Registry from "../components/Registry";
 import Schedule from "../components/Schedule";
 import Hotel from "../components/Hotel";
+import Story from "../components/Story";
 
 Vue.use(router);
 
@@ -53,6 +54,11 @@ export default new router({
             name: "Contact",
             component: Contact
         },
+        {
+            path: "/story",
+            name: "Story",
+            component: Story
+        }
     ],
     mode: "history",
 });

@@ -3,7 +3,7 @@
         <div class="mx-3">
             <h1 class="text_align_center">Directions</h1>
             <div class="dir-container">
-                <div class="text_align_left mt-3 directions">
+                <!-- <div class="text_align_left mt-3 directions">
                     <div class="dir-text">
                         <span class="icons">
                             <img src="../assets/icons/drinks.svg" alt="">
@@ -21,7 +21,7 @@
                             src="../assets/mask-group-2.png"
                         />
                     </div>
-                </div>
+                </div> -->
 
                 <div class="text_align_left mt-3 directions">
                     <div class="dir-text">

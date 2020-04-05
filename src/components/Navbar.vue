@@ -43,11 +43,11 @@ export default {
                     name: "Home",
                     path: "/",
                 },
-                {
-                    id: 1,
-                    name: "RSVP",
-                    path: "/RSVP",
-                },
+                // {
+                //     id: 1,
+                //     name: "RSVP",
+                //     path: "/RSVP",
+                // },
                 {
                     id: 2,
                     name: "Schedule",

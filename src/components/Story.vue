@@ -1,9 +1,9 @@
 <template>
     <div class="content text_align_center">
         <div class="mx-3">
-            <h1 class="text_align_center">Registry</h1>
+            <h1 class="text_align_center">{{ this.$route.params.title }}</h1>
             <div class="text_align_left">
-                COMING SOON
+                {{ this.$route.params.story }}
             </div>
         </div>
     </div>
@@ -12,7 +12,7 @@
 <script>
 
 export default {
-    name: "Registry",
+    name: "Story",
 }
 
 </script>

@@ -2,7 +2,7 @@
     <div class="content text_align_center container">
         <h1 class="text_align_center">Schedule</h1>
         <div class="schedule">
-            <div class="text_align_left mt-3 event">
+            <!-- <div class="text_align_left mt-3 event">
                 <span class="icons">
                     <img src="../assets/icons/drinks.svg" alt="">
                 </span>
@@ -11,7 +11,7 @@
                     <div class="date">Friday, September 18, 2020</div>
                     <div class="time">8:00pm</div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="text_align_left mt-3 event">
                 <span class="icons">

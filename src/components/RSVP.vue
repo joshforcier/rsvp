@@ -116,7 +116,6 @@ export default {
                 dietRestrictions: this.newRsvp.dietRestrictions,
             });
             this.showAlert();
-            // this.$router.push({ name: "Directions"});
         },
         showAlert() {
             Swal.fire({

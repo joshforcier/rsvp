@@ -15,44 +15,45 @@
                 
             </h2>
         </div>
-        <!-- <div class="ml-3 text right">
-            <div class="mt-3">#JoshAndKaylyn</div>
-            <div class="mt-3">September 19, 2020</div>
-            <div class="mt-3">Janesville, WI</div>
-        </div> -->
         <div class="homeCards">
             <div class="homeCard">
-                <div class="home__card">
-                    <span class="home__icons">
-                        <img src="../assets/icons/met.svg" alt="">
-                    </span>
-                    <div class="home__info">
-                        <div class="cardTitle">HOW WE MET</div>
-                        <div class="">June 2015</div>
+                <router-link :to="{ name: 'Story', params: { title: metTitle, story: met } }">
+                    <div class="home__card">
+                        <span class="home__icons">
+                            <img src="../assets/icons/met.svg" alt="">
+                        </span>
+                        <div class="home__info">
+                            <div class="cardTitle">HOW WE MET</div>
+                            <div class="">June 2015</div>
+                        </div>
                     </div>
-                </div>
+                </router-link>
             </div>
             <div class="homeCard">
-                <div class="home__card">
-                    <span class="home__icons">
-                        <img src="../assets/icons/proposal.svg" alt="">
-                    </span>
-                    <div class="home__info">
-                        <div class="cardTitle">THE PROPOSAL</div>
-                        <div class="">May 2019</div>
+                <router-link :to="{ name: 'Story', params: { title: proposalTitle, story: proposal } }">
+                    <div class="home__card">
+                        <span class="home__icons">
+                            <img src="../assets/icons/proposal.svg" alt="">
+                        </span>
+                        <div class="home__info">
+                            <div class="cardTitle">THE PROPOSAL</div>
+                            <div class="">May 2019</div>
+                        </div>
                     </div>
-                </div>
+                </router-link>
             </div>
             <div class="homeCard">
-                <div class="home__card">
-                    <span class="home__icons">
-                        <img src="../assets/icons/ring.svg" alt="">
-                    </span>
-                    <div class="home__info">
-                        <div class="cardTitle">THE MARRIAGE</div>
-                        <div class="">September 2019</div>
+                <router-link :to="{ name: 'Story', params: { title: marriageTitle, story: marriage } }">
+                    <div class="home__card">
+                        <span class="home__icons">
+                            <img src="../assets/icons/ring.svg" alt="">
+                        </span>
+                        <div class="home__info">
+                            <div class="cardTitle">THE MARRIAGE</div>
+                            <div class="">September 2019</div>
+                        </div>
                     </div>
-                </div>
+                </router-link>
             </div>
         </div>
     </div>
@@ -66,6 +67,16 @@ export default {
     name: "Home",
     components: {
         RSVP,
+    },
+    data () {
+        return {
+            metTitle: "How we met",
+            met: "met",
+            proposalTitle: "The Proposal",
+            proposal: "proposal",
+            marriageTitle: "The Marriage",
+            marriage: "marriage",
+        }
     },
 }
 
@@ -175,6 +186,10 @@ img {
 
 .cardTitle {
     color: #7EA2A1;
+}
+
+a {
+    color: black;
 }
 
 </style>
