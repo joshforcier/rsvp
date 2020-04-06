@@ -25,9 +25,9 @@
 
                 <div class="text_align_left mt-3 directions">
                     <div class="dir-text">
-                        <span class="icons">
+                        <!-- <span class="icons">
                             <img src="../assets/icons/registry-office.svg" alt="">
-                        </span>
+                        </span> -->
                         <div class="dir-info">
                             <h3 class="dir-title">CEREMONY/RECEPTION</h3>
                             <div class="street">2757 W Deer Path Trail</div>
@@ -45,9 +45,9 @@
 
                 <div class="text_align_left mt-3 directions">
                     <div class="dir-text">
-                        <span class="icons">
+                        <!-- <span class="icons">
                             <img src="../assets/icons/hotel.svg" alt="">
-                        </span>
+                        </span> -->
                         <div class="dir-info">
                             <h3 class="dir-title">HOTEL</h3>
                             <div class="street">2706 Pontiac Place</div>
@@ -130,23 +130,18 @@ export default {
 }
 
 .dir-text {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .icons img {
     width: 90%;
 }
 
-.icons {
-    display: flex;
-    justify-content: center;
-    width: 75%;
-    max-height: 75px;
-}
-
 .dir-title {
     color: #7EA2A1;
+    text-align: center;
 }
 
 </style>

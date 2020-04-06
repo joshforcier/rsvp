@@ -17,32 +17,40 @@
         </div>
         <div class="homeCards">
             <div class="homeCard">
-                <router-link :to="{ name: 'Story', params: { title: metTitle, story: met } }">
-                    <div class="home__card">
-                        <span class="home__icons">
-                            <img src="../assets/icons/met.svg" alt="">
-                        </span>
-                        <div class="home__info">
-                            <div class="cardTitle">HOW WE MET</div>
-                            <div class="">June 2015</div>
+                <div class="home__card">
+                    <!-- <span class="home__icons">
+                        <img src="../assets/icons/met.svg" alt="">
+                    </span> -->
+                    <div class="home__info">
+                        <div class="cardTitle">HOW WE MET</div>
+                        <div class="cardTitle">June 2015</div>
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </div>
                     </div>
-                </router-link>
+                </div>
             </div>
             <div class="homeCard">
-                <router-link :to="{ name: 'Story', params: { title: proposalTitle, story: proposal } }">
-                    <div class="home__card">
-                        <span class="home__icons">
-                            <img src="../assets/icons/proposal.svg" alt="">
-                        </span>
-                        <div class="home__info">
-                            <div class="cardTitle">THE PROPOSAL</div>
-                            <div class="">May 2019</div>
+                <div class="home__card">
+                    <!-- <span class="home__icons">
+                        <img src="../assets/icons/proposal.svg" alt="">
+                    </span> -->
+                    <div class="home__info">
+                        <div class="cardTitle">THE PROPOSAL</div>
+                        <div class="cardTitle">May 2019</div>
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </div>
                     </div>
-                </router-link>
+                </div>
             </div>
-            <div class="homeCard">
+            <!-- <div class="homeCard">
                 <router-link :to="{ name: 'Story', params: { title: marriageTitle, story: marriage } }">
                     <div class="home__card">
                         <span class="home__icons">
@@ -54,7 +62,7 @@
                         </div>
                     </div>
                 </router-link>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>
@@ -67,16 +75,6 @@ export default {
     name: "Home",
     components: {
         RSVP,
-    },
-    data () {
-        return {
-            metTitle: "How we met",
-            met: "met",
-            proposalTitle: "The Proposal",
-            proposal: "proposal",
-            marriageTitle: "The Marriage",
-            marriage: "marriage",
-        }
     },
 }
 
@@ -116,7 +114,6 @@ export default {
 
 @media screen and (min-width: 1024px) {
     .home {
-        /* width: 75%; */
         margin: auto;
     }
 }
@@ -144,23 +141,17 @@ img {
 }
 
 .homeCards {
-    display: grid;
     margin-top: 5%;
 }
 
-@media screen and (min-width: 1024px) {
-    .homeCards {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
 .homeCard {
-    display: grid;
-    /* grid-template-columns: 1fr 1fr; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.09);
     border-radius: 10px;
     padding: 10px;
-    width: 300px;
+    width: 90%;
     margin: 10px auto;
     background-color: white;
 }
@@ -169,18 +160,9 @@ img {
     display: flex;
 }
 
-.home__icons {
-    display: flex;
-}
-
-.home__icons img {
-    width: 50%;
-    margin: auto;
-}
-
 .home__info {
     width: 100%;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     margin: auto;
 }
 
