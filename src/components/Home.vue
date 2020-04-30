@@ -112,17 +112,6 @@ export default {
 
 <style scoped>
 
-@media screen and (min-width: 1024px) {
-    .home {
-        margin: auto;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .content {
-        margin-bottom: -20%;
-    }
-}
 .content {
     font-family: "Poiret One";
 }
@@ -162,7 +151,6 @@ img {
 
 .home__info {
     width: 100%;
-    /* white-space: nowrap; */
     margin: auto;
 }
 
@@ -172,6 +160,21 @@ img {
 
 a {
     color: black;
+}
+
+@media screen and (min-width: 1024px) {
+    .home {
+        margin: auto;
+    }
+    .homeCard {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .content {
+        margin-bottom: -20%;
+    }
 }
 
 </style>

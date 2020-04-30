@@ -93,11 +93,13 @@ export default {
 @media screen and (min-width: 1024px) {
     .dir-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        max-width: 50%;
+        margin: auto;
     }
 
     .directions {
-        width: 75%;
+        width: 50%;
         margin: auto;
     }
 }

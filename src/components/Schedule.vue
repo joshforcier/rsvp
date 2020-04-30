@@ -58,6 +58,7 @@ export default {
     padding: 20px;
     font-size: 0.9rem;
     background-color: white;
+    margin: auto;
 }
 
 @media screen and (min-width: 1024px) {

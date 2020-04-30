@@ -37,5 +37,6 @@ export default {
     width: 60%;
     margin: auto;
     padding: 24px;
+    max-width: 400px;
 }
 </style>
