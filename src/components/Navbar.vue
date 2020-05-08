@@ -68,11 +68,11 @@ export default {
                     name: "Registry",
                     path: "/registry",
                 },
-                {
-                    id: 6,
-                    name: "Pictures",
-                    path: "/pictures",
-                },
+                // {
+                //     id: 6,
+                //     name: "Pictures",
+                //     path: "/pictures",
+                // },
                 {
                     id: 7,
                     name: "Contact",
@@ -122,6 +122,10 @@ export default {
 .router-link-exact-active {
     border-bottom: 2px solid #7EA2A1;
     line-height: 0.7em;
+}
+
+.nav-item {
+    font-family: "Poiret One";
 }
 
 </style>

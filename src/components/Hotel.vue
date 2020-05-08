@@ -44,7 +44,7 @@ export default {
     margin : 0 auto;
     display: block;
     background-color: #7EA2A1;
-    border-radius: 10px;
+    border-radius: 3px;
     color: white;
 }
 
@@ -65,25 +65,29 @@ export default {
 
 .hotel__container {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.09);
-    border-radius: 10px;
+    border-radius: 3px;
     margin-top: 20px;
     background-color: white;
     padding: 20px;
 }
 
 .hotelImg {
-    border-radius: 10px;
+    border-radius: 3px;
     width: 100%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.09);
 }
 
 .hotelInfo {
     text-indent: 50px;
-    text-align: left
+    text-align: left;
 }
 
 .info_date {
     font-style: italic;
     color: red;
+}
+
+.hotel {
+    font-family: "Poiret One";
 }
 </style>

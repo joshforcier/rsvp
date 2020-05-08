@@ -54,11 +54,12 @@ export default {
     justify-content: center;
     min-width: 260px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.09);
-    border-radius: 10px;
+    border-radius: 3px;
     padding: 20px;
     font-size: 0.9rem;
     background-color: white;
     margin: auto;
+    font-family: "Poiret One";
 }
 
 @media screen and (min-width: 1024px) {

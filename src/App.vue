@@ -27,6 +27,8 @@ export default {
 h1 {
     font-size: 1.5rem;
     padding-top: 1rem;
+    font-family: "Poiret One";
+    font-weight: bold;
 }
 
 h2 {
