@@ -55,7 +55,7 @@
                             our lives, could never have brought us the love, friendship, closeness and growth that we received from our pregnancy. 
                             A year after our first date, we welcomed the greatest gift we could give each other, Jackson Joshua. He was (is) perfect. 
                             Things changed quickly for Josh and me again. Adjusting to a newborn is exactly what you’d think and not what you’d think 
-                            at the same time. One thing that stayed constant was Josh and me growing together. One night, after a long stretch 
+                            at all at the same time. One thing that stayed constant was Josh and I growing together. One night, after a long stretch 
                             of newborn chaos, and one of those first post-pregnancy glasses of wine, Josh and I decided we were going to take some 
                             time for the two of us. On a whim we put down a non-refundable deposit for an all inclusive trip to Barbados for the 
                             following year. We joked in the days after that we couldn’t believe we were actually going through with it. We had a 
