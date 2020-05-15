@@ -48,11 +48,11 @@ export default {
                 //     name: "RSVP",
                 //     path: "/RSVP",
                 // },
-                {
-                    id: 2,
-                    name: "Schedule",
-                    path: "/schedule",
-                },
+                // {
+                //     id: 2,
+                //     name: "Schedule",
+                //     path: "/schedule",
+                // },
                 {
                     id: 3,
                     name: "Directions",
