@@ -1,5 +1,6 @@
 <template>
     <div>
+        Total Count: {{ count }}
         <ol>
             <li
                 v-for="(data, index) in rsvp"
@@ -9,7 +10,9 @@
                     v-for="(name, index) in data.name"
                     :key="index"
                 >
-                    <div v-if="name">{{ name }}</div>
+                    <div v-if="name">
+                        {{ name }}
+                    </div>
                 </div>
                 <div v-if="data.dietRestrictions">
                     Diet Restrictions: {{ data.dietRestrictions }}
@@ -31,6 +34,19 @@ export default {
     data() {
         return {
             rsvp: {},
+        }
+    },
+    computed: {
+        count() {
+            const data = this.rsvp;
+            let count = 0;
+            Object.entries(data).forEach(([key, value]) => {
+                if (value.name && value.name.length > 0 && value.name != undefined) {
+                    count += value.name.filter(Boolean).length;
+                }
+            });
+
+            return count;
         }
     },
 }
