@@ -9,6 +9,8 @@ import Registry from "../components/Registry";
 import Schedule from "../components/Schedule";
 import Hotel from "../components/Hotel";
 import Story from "../components/Story";
+import Results from "../components/Results";
+
 
 Vue.use(router);
 
@@ -58,7 +60,13 @@ export default new router({
             path: "/story",
             name: "Story",
             component: Story
-        }
+        },
+        {
+            path: "/results",
+            name: "Results",
+            component: Results
+        },
+
     ],
     mode: "history",
 });

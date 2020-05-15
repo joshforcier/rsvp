@@ -4,13 +4,11 @@
             <h1 class="text_align_center">Our Pictures</h1>
         </div>
         <div class="images">
-            <gallery :images="images" :index="index" @close="index = null"></gallery>
-            <div
+            <img
+                v-for="(image, index) in sortedImages"
+                :key="index"
+                :src="image.pathLong"
                 class="image"
-                v-for="(image, imageIndex) in images"
-                :key="imageIndex"
-                @click="index = imageIndex"
-                :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px', }"
             />
         </div>
     </div>
@@ -18,25 +16,33 @@
 
 <script>
 
-import VueGallery from "vue-gallery";
-
 export default {
     name: "Pictures",
     data: function () {
         return {
-            images: [
-                '/static/images/DSC_9950-min.jpg',
-                '/static/images/ImageID_36493066.jpg',
-                '/static/images/ImageID_36493068.jpg',
-                '/static/images/00100sPORTRAIT_00100_BURST20190408194425664_COVER.jpg',
-                '/static/images/00100sPORTRAIT_00100_BURST20190504212244218_COVER.jpg',
-            ],
-            index: null,
+            images: [],
         };
     },
+    methods: {
+        importAll(r) {
+            r.keys().forEach(key => (this.images.push({ pathLong: r(key), pathShort: key })));
+        },
+    },
+    computed: {
+        sortedImages() {
+            const data = this.images;
+            for (var i = data.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var temp = data[i];
+                data[i] = data[j];
+                data[j] = temp;
+            }
 
-    components: {
-        "gallery": VueGallery,
+            return data;
+        }
+    },
+    mounted() {
+        this.importAll(require.context('../../static/images/', true, /\.jpg$/));
     },
 }
 
@@ -45,28 +51,23 @@ export default {
 <style>
 
 .image {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
     border: 1px solid #ebebeb;
     margin: 10px auto;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.09);
+    width: 90%;
+}
+
+.images {
+    display: grid;
 }
 
 @media screen and (min-width: 1024px) {
-    .images {
-        display: flex;
-        width: 75%;
-        margin: auto;
-    }
     .image {
-        margin: 10px;
+        width: 50%;
+    }
+    .images {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
-
-.close {
-    color: white !important;
-}
-
 
 </style>

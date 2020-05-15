@@ -68,11 +68,11 @@ export default {
                     name: "Registry",
                     path: "/registry",
                 },
-                // {
-                //     id: 6,
-                //     name: "Pictures",
-                //     path: "/pictures",
-                // },
+                {
+                    id: 6,
+                    name: "Pictures",
+                    path: "/pictures",
+                },
                 {
                     id: 7,
                     name: "Contact",
