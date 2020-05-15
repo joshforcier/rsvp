@@ -30,7 +30,7 @@ export default {
     },
     data() {
         return {
-            // test: this.rsvp,
+            rsvp: {},
         }
     },
 }
