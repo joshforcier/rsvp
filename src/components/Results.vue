@@ -41,7 +41,7 @@ export default {
             const data = this.rsvp;
             let count = 0;
             Object.entries(data).forEach(([key, value]) => {
-                if (value.name && value.name.length > 0 && value.name != undefined) {
+                if (value.name && value.name.length > 0) {
                     count += value.name.filter(Boolean).length;
                 }
             });
