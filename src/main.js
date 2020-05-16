@@ -18,7 +18,8 @@ Vue.config.productionTip = false;
 
 // Configuration VueAnalytics
 Vue.use(VueAnalytics, {
-    id: 'UA-166845191-1'
+    id: 'UA-166845191-1',
+    router
 });
 
 /* eslint-disable no-new */
