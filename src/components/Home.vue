@@ -206,6 +206,7 @@ img {
 
 .cardTitle {
     color: #7EA2A1;
+    font-weight: bold;
 }
 
 a {
