@@ -7,6 +7,7 @@ import BootstrapVue from "bootstrap-vue"
 import VueSweetalert2 from "vue-sweetalert2";
 import VueGallery from 'vue-gallery'
 import { rtdbPlugin } from "vuefire";
+import VueAnalytics from 'vue-analytics';
 
 Vue.use(router);
 Vue.use(rtdbPlugin);
@@ -14,6 +15,11 @@ Vue.use(BootstrapVue);
 Vue.use(VueSweetalert2);
 Vue.use(VueGallery);
 Vue.config.productionTip = false;
+
+// Configuration VueAnalytics
+Vue.use(VueAnalytics, {
+    id: 'UA-166845191-1'
+});
 
 /* eslint-disable no-new */
 new Vue({
