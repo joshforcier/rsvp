@@ -44,7 +44,7 @@ export default {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.09);
     border-radius: 3px;
     padding: 20px;
-    width: 300px;
+    width: 320px;
     margin: 10px auto;
     background-color: white;
 }
@@ -52,6 +52,10 @@ export default {
 .contacts {
     display: grid;
     margin: auto;
+}
+
+.contactInfo {
+    white-space: nowrap;
 }
 
 @media screen and (min-width: 1024px) {
