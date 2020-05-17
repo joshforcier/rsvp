@@ -89,7 +89,6 @@ export default {
     display: flex;
     justify-content: center;
     width: 75%;
-
 }
 
 </style>
