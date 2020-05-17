@@ -47,17 +47,11 @@ export default {
     width: 300px;
     margin: 10px auto;
     background-color: white;
-    display: flex;
-    flex-direction: column;
 }
 
 .contacts {
     display: grid;
     margin: auto;
-}
-
-.contactInfo {
-    display: flex;
 }
 
 @media screen and (min-width: 1024px) {
