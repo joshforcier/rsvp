@@ -3,7 +3,7 @@
         <div>
             <h1 class="text_align_center rsvp">RSVP</h1>
             <div class="deadline text_align_center">
-                Deadline: June 1st, 2020
+                Deadline: August 1st, 2020
             </div>
         </div>
         <div class="card-body">
