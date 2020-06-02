@@ -24,6 +24,9 @@
                 <p class="hotelInfo info_date">
                     Be sure to book your hotel room by August 21, 2020 in order to receive the discount.
                 </p>
+                <p class="hotelInfo info_date">
+                    A shuttle will be provided to drive guests back to the hotel starting at 9pm.
+                </p>
             </div>
         </div>
     </div>

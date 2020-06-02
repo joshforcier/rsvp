@@ -1,7 +1,7 @@
 <template>
     <div class="content">
         <div class="mx-3">
-            <h1 class="text_align_center">Our Pictures</h1>
+            <h1 class="text_align_center">Gallery</h1>
         </div>
         <div class="images">
             <img

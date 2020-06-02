@@ -1,6 +1,6 @@
 <template>
     <div class="content container">
-        <h1 class="text_align_center">Schedule</h1>
+        <h1 class="text_align_center">Details</h1>
         <div class="schedule">
             <!-- <div class="text_align_left mt-3 event">
                 <span class="icons">
@@ -20,7 +20,7 @@
                 <div class="info">
                     <H3 class="title">CEREMONY</H3>
                     <div class="date">Saturday, September 19, 2020</div>
-                    <div class="time">3:00pm</div>
+                    <div class="time">4:00pm</div>
                 </div>
             </div>
 
@@ -31,7 +31,7 @@
                 <div class="info">
                     <H3 class="title">RECEPTION</H3>
                     <div class="date">Saturday, September 19, 2020</div>
-                    <div class="time">5:00pm - 1:00am</div>
+                    <div class="time">6:00pm - 1:00am</div>
                 </div>
             </div>
         </div>

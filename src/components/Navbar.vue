@@ -50,12 +50,12 @@ export default {
                 // },
                 // {
                 //     id: 2,
-                //     name: "Schedule",
+                //     name: "Details",
                 //     path: "/schedule",
                 // },
                 {
                     id: 3,
-                    name: "Directions",
+                    name: "Getting There",
                     path: "/directions",
                 },
                 {
@@ -70,7 +70,7 @@ export default {
                 },
                 {
                     id: 6,
-                    name: "Pictures",
+                    name: "Gallery",
                     path: "/pictures",
                 },
                 {
