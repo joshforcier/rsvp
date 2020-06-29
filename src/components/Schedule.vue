@@ -31,7 +31,7 @@
                 <div class="info">
                     <H3 class="title">RECEPTION</H3>
                     <div class="date">Saturday, September 19, 2020</div>
-                    <div class="time">6:00pm - 1:00am</div>
+                    <!-- <div class="time">6:00pm - 1:00am</div> -->
                 </div>
             </div>
         </div>
