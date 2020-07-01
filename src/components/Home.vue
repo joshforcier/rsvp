@@ -4,7 +4,7 @@
             :class="$style.container"
         >
             <img
-                src="/static/TO1_2910-min.jpg"
+                src="/static/TO1_2911-min.jpg"
                 alt="engagement-photo"
                 style="width:100%;"
             >
