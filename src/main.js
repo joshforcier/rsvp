@@ -8,12 +8,14 @@ import VueSweetalert2 from "vue-sweetalert2";
 import VueGallery from 'vue-gallery'
 import { rtdbPlugin } from "vuefire";
 import VueAnalytics from 'vue-analytics';
+import VueLazyload from 'vue-lazyload';
 
 Vue.use(router);
 Vue.use(rtdbPlugin);
 Vue.use(BootstrapVue);
 Vue.use(VueSweetalert2);
 Vue.use(VueGallery);
+Vue.use(VueLazyload);
 Vue.config.productionTip = false;
 
 // Configuration VueAnalytics

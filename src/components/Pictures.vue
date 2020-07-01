@@ -7,7 +7,7 @@
             <img
                 v-for="(image, index) in sortedImages"
                 :key="index"
-                :src="image.pathLong"
+                v-lazy="image.pathLong"
                 class="image"
             />
         </div>
