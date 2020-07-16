@@ -10,67 +10,100 @@
             <form @submit.prevent="addRsvp">
                 <div class="form-group">
                     <div class="form-item">
-                        <label>How many people are attending?</label>
+                        <label>Are you attending?</label>
                         <select
                             required
                             class="form-control"
-                            v-model="selected"
+                            v-model="attending.value"
+                            @change="onChange(attending.value)"
                         >
                             <option
-                                v-for="n in 6"
-                                :key="n"
-                                :value="{ number: n }"
+                                v-for="(option, index) in attending"
+                                :key="index"
+                                :value="option.value"
                             >
-                                {{ n }}
+                                {{ option.text }}
                             </option>
                         </select>
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <div class="form-item">
-                        <label>Names:</label>
-                        <input
-                            required
-                            type="text"
-                            class="form-control names"
-                            v-for="n in Number(selected.number)"
-                            v-model="newRsvp.name[n]"
-                            :index="n"
-                            :key="n"
-                        />
+                <div v-if="attending.value">
+                    <div class="form-group">
+                        <div class="form-item">
+                            <label>How many people are attending?</label>
+                            <select
+                                required
+                                class="form-control"
+                                v-model="selected"
+                            >
+                                <option
+                                    v-for="n in 6"
+                                    :key="n"
+                                    :value="{ number: n }"
+                                >
+                                    {{ n }}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-item">
+                            <label>Names:</label>
+                            <input
+                                required
+                                type="text"
+                                class="form-control names"
+                                v-for="n in Number(selected.number)"
+                                v-model="newRsvp.name[n]"
+                                :index="n"
+                                :key="n"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-item">
+                            <label>Any Dietary Restrictions(GF, V, Allergies)?</label>
+                            <select
+                                required
+                                class="form-control"
+                                v-model="diet"
+                            >
+                                <option :value="false">No</option>
+                                <option :value="true">Yes</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div
+                        class="form-group"
+                        v-if="diet === true"
+                    >
+                        <div class="form-item">
+                            <label>Dietary Restrictions:</label>
+                            <input
+                                required
+                                type="text"
+                                class="form-control"
+                                v-model="newRsvp.dietRestrictions"
+                            />
+                        </div>
                     </div>
                 </div>
-
-                <div class="form-group">
-                    <div class="form-item">
-                        <label>Any Dietary Restrictions(GF, V, Allergies)?</label>
-                        <select
-                            required
-                            class="form-control"
-                            v-model="diet"
-                        >
-                            <option :value="false">No</option>
-                            <option :value="true">Yes</option>
-                        </select>
+                <div v-if="attending.value === false">
+                    <div class="form-group">
+                        <div class="form-item">
+                            <label>Name:</label>
+                            <input
+                                required
+                                v-model="newRsvp.name"
+                                type="text"
+                                class="form-control names"
+                            />
+                        </div>
                     </div>
                 </div>
-
-                <div
-                    class="form-group"
-                    v-if="diet === true"
-                >
-                    <div class="form-item">
-                        <label>Dietary Restrictions:</label>
-                        <input
-                            required
-                            type="text"
-                            class="form-control"
-                            v-model="newRsvp.dietRestrictions"
-                        />
-                    </div>
-                </div>
-
                 <div class="form-group">
                     <input
                         type="submit"
@@ -95,10 +128,15 @@ export default {
     },
     data () {
         return {
+            attending: [
+                { text: 'Will attend' , value: true },
+                { text: 'Will not attend' , value: false },
+            ],
             selected: {
                 number: 2,
             },
             newRsvp: {
+                isAttending: "",
                 name: [],
                 dietRestrictions: "",
                 type: String,
@@ -112,6 +150,7 @@ export default {
     methods: {
         addRsvp() {
             this.$firebaseRefs.rsvp.push({
+                attending: this.attending.value,
                 name: this.newRsvp.name,
                 dietRestrictions: this.newRsvp.dietRestrictions,
             });
@@ -125,6 +164,9 @@ export default {
                 timer: 1500,
                 showConfirmButton: false,
             });
+        },
+        onChange(value) {
+            this.newRsvp.isAttending = value;
         },
     },
 }
