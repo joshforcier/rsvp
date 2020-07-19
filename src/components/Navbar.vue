@@ -43,16 +43,16 @@ export default {
                     name: "Home",
                     path: "/",
                 },
-                // {
-                //     id: 1,
-                //     name: "RSVP",
-                //     path: "/RSVP",
-                // },
-                // {
-                //     id: 2,
-                //     name: "Details",
-                //     path: "/schedule",
-                // },
+                {
+                    id: 1,
+                    name: "RSVP",
+                    path: "/RSVP",
+                },
+                {
+                    id: 2,
+                    name: "Details",
+                    path: "/schedule",
+                },
                 {
                     id: 3,
                     name: "Getting There",
