@@ -2,7 +2,7 @@
     <div class="content text_align_center">
         <div class="mx-3">
             <h1 class="text_align_center">Directions</h1>
-            <div class="shuttle">A shuttle will be provided to drive guests back to the hotel starting at 9pm.</div>
+            <div class="shuttle">Ignore the road closed signs and trust your GPS.</div>
             <div class="dir-container">
                 <!-- <div class="text_align_left mt-3 directions">
                     <div class="dir-text">
