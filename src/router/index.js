@@ -10,7 +10,8 @@ import Schedule from "../components/Schedule";
 import Hotel from "../components/Hotel";
 import Story from "../components/Story";
 import Results from "../components/Results";
-
+import Vows from "../components/Vows";
+import Video from "../components/Video";
 
 Vue.use(router);
 
@@ -22,51 +23,20 @@ export default new router({
             component: Home
         },
         {
-            path: "/RSVP",
-            name: "RSVP",
-            component: RSVP
+            path: "/Vows",
+            name: "Vows",
+            component: Vows
         },
         {
-            path: "/schedule",
-            name: "Schedule",
-            component: Schedule
-        },
-        {
-            path: "/directions",
-            name: "Directions",
-            component: Directions
-        },
-        {
-            path: "/hotel",
-            name: "Hotel",
-            component: Hotel
-        },
-        {
-            path: "/registry",
-            name: "Registry",
-            component: Registry
+            path: "/Video",
+            name: "Video",
+            component: Video
         },
         {
             path: "/pictures",
             name: "Pictures",
             component: Pictures
         },
-        {
-            path: "/contact",
-            name: "Contact",
-            component: Contact
-        },
-        {
-            path: "/story",
-            name: "Story",
-            component: Story
-        },
-        {
-            path: "/results",
-            name: "Results",
-            component: Results
-        },
-
     ],
     mode: "history",
 });

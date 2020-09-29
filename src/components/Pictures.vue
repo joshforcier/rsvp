@@ -1,16 +1,14 @@
 <template>
-    <div class="content">
-        <div class="mx-3">
+    <div class="">
+        <div class="">
             <h1 class="text_align_center">Gallery</h1>
         </div>
-        <div class="images">
-            <img
-                v-for="(image, index) in sortedImages"
-                :key="index"
-                v-lazy="image.pathLong"
-                class="image"
-            />
-        </div>
+        <vue-easy-lightbox
+            :visible="visible"
+            :imgs="sortedImages"
+            :index="index"
+            @hide="handleHide()"
+        />
     </div>
 </template>
 
@@ -18,19 +16,30 @@
 
 export default {
     name: "Pictures",
+    components: {
+        VueEasyLightbox
+    },
     data: function () {
         return {
             images: [],
+            index: 0,
+            visible: false,
         };
     },
     methods: {
         importAll(r) {
             r.keys().forEach(key => (
                 this.images.push({
-                    pathLong: r(key),
-                    pathShort: key,
+                    src: r(key),
+                    thumbnail: r(key),
                 })
             ));
+        },
+        handleHide() {
+            this.visible = false;
+        },
+        show() {
+            this.visible = true;
         },
     },
     computed: {
@@ -44,7 +53,7 @@ export default {
             }
 
             return data;
-        }
+        },
     },
     mounted() {
         this.importAll(require.context('../../static/images/', true, /\.jpg$/));
@@ -55,24 +64,6 @@ export default {
 
 <style>
 
-.image {
-    border: 1px solid #ebebeb;
-    margin: 10px auto;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.09);
-    width: 90%;
-}
 
-.images {
-    display: grid;
-}
-
-@media screen and (min-width: 1024px) {
-    .image {
-        width: 50%;
-    }
-    .images {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
 
 </style>

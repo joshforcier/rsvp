@@ -45,38 +45,18 @@ export default {
                 },
                 {
                     id: 1,
-                    name: "RSVP",
-                    path: "/RSVP",
+                    name: "Vows",
+                    path: "/vows",
                 },
                 {
                     id: 2,
-                    name: "Details",
-                    path: "/schedule",
+                    name: "Ceremony",
+                    path: "/video",
                 },
                 {
                     id: 3,
-                    name: "Getting There",
-                    path: "/directions",
-                },
-                {
-                    id: 4,
-                    name: "Hotel",
-                    path: "/hotel",
-                },
-                {
-                    id: 5,
-                    name: "Registry",
-                    path: "/registry",
-                },
-                {
-                    id: 6,
                     name: "Gallery",
                     path: "/pictures",
-                },
-                {
-                    id: 7,
-                    name: "Contact",
-                    path: "/contact",
                 },
             ],
         }

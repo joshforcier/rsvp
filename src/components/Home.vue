@@ -11,7 +11,7 @@
             <h2 
                 :class="$style.were_getting_married"
             >
-                WE'RE<br/>GETTING<br/>MARRIED!
+                MR AND MRS<br />FORCIER
                 
             </h2>
         </div>
