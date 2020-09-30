@@ -32,7 +32,7 @@
                 <div class="home__info">
                     <div class="cardTitle">Kaylyn's</div>
                     <p class="story">
-                        Josh, you are my best friend and the love of my life. I am so excited to be merrying you today. Since the first time I saw you I felt a connection to you.
+                        Josh, you are my best friend and the love of my life. I am so excited to be marrying you today. Since the first time I saw you I felt a connection to you.
                         You were hands down the best looking person I had ever seen in real life. Our story took some time to unfold, but looking back, there were so many moments
                         that I now realize were leading me to you. I am so thankful that our friendship grew into this life together.
                     </p>
@@ -44,7 +44,7 @@
                     </p>
                     <p class="story">
                         I promise to say thank you everyday. I promise to be grateful for you and to not take one day with you for granted. I promise to take risks with you and to always
-                        support you. I promise to be your partner in whatevre life throws at us. I promise to work with you in raising Jack, even when that means baby mullets and cheering
+                        support you. I promise to be your partner in whatever life throws at us. I promise to work with you in raising Jack, even when that means baby mullets and cheering
                         for the Vikings. I promise to be present with you and live in the moment with you. From recognizing the peace in the quite times with you, to late nights dancing
                         in the kitchen to the theme song from Dave. I'll laugh with you and I'll cry with you. And I promise not to spend all of our money on targeted Instagram ads, even
                         if Chrissy Teigen has it. Unless we really, really need it.
