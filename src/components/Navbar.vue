@@ -53,11 +53,11 @@ export default {
                     name: "Ceremony",
                     path: "/video",
                 },
-                {
-                    id: 3,
-                    name: "Gallery",
-                    path: "/pictures",
-                },
+                // {
+                //     id: 3,
+                //     name: "Gallery",
+                //     path: "/pictures",
+                // },
             ],
         }
     },
@@ -78,8 +78,7 @@ export default {
 }
 
 .navbar_border {
-    /* border-bottom: 1px solid black; */
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.09);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 2px 3px 0 rgba(0, 0, 0, 0.05);
 }
 
 .nav-link {

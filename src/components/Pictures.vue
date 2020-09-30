@@ -12,10 +12,10 @@
             >
                 <a :download="src.path" :href="src.path">
                     <span>
-                        <img  class="download_icon" src="../assets/icons/cloud-computing.svg" alt="">
+                        <img class="download_icon" src="../assets/icons/cloud-computing.svg" alt="">
                     </span>
                 </a>
-                <img :src="src.path">
+                <img class="img" :src="src.path">
             </div>
         </div>
         <vue-easy-lightbox
@@ -90,27 +90,24 @@ export default {
 
 .gallery {
     width: 100%;
-    max-width: 1000px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
+
 @media screen and (min-width: 1024px) {
-    .pic {
-        width: calc(50% - 30px);
+    .gallery {
+        column-count: 3;
+        column-gap: 10px;
     }
 }
 .pic {
-    margin: 15px;
     position: relative;
-}
-.pic:hover img {
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0); */
-    /* transform: scale(1.01); */
 }
 img {
     width: 100%;
     transition: 0.3s ease;
+}
+.pic .img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
+    margin-bottom: 10px;
 }
 .download_icon {
     cursor: pointer;

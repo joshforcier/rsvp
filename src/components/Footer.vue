@@ -5,7 +5,6 @@
                 <small>Made by Josh Forcier with Vue.js</small>
             </a> -->
         </p>
-        <img src="../assets/icons/Asset4.svg" alt="">
     </footer>
 </template>
 
