@@ -38,12 +38,12 @@
                     </p>
                     <p class="story">
                         There are countless reasons why I love you. You are smart and you are patient. You think logically and you always ground me. Your love for me and for Jack
-                        does not waiver. You are both of our #1 fans and the support you give us is constant and unconditional. Whether it's a moajor life decision, or my realizing
+                        does not waiver. You are both of our #1 fans and the support you give us is constant and unconditional. Whether it's a major life decision, or my realizing
                         Vanderpump Rules will probably never be the same again, you're always there for me providing comfort. Because of you I feel safe. Because of you I know that
                         things will always be okay. For the rest of my life, I promise to do all that I can to make you feel the same way.
                     </p>
                     <p class="story">
-                        I promise to say thank you everyday. I promise to be grateful for you and to not take one day with you for granted. I promise to take risks with you and to always
+                        I promise to say thank you. Everyday. I promise to be grateful for you and to not take one day with you for granted. I promise to take risks with you and to always
                         support you. I promise to be your partner in whatever life throws at us. I promise to work with you in raising Jack, even when that means baby mullets and cheering
                         for the Vikings. I promise to be present with you and live in the moment with you. From recognizing the peace in the quite times with you, to late nights dancing
                         in the kitchen to the theme song from Dave. I'll laugh with you and I'll cry with you. And I promise not to spend all of our money on targeted Instagram ads, even
