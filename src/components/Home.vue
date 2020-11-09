@@ -1,41 +1,13 @@
 <template>
     <div class="content home">
         <div
-                :class="$style.container"
+            :class="$style.container"
         >
-            <carousel
-                :autoplay="true"
-                :autoplayTimeout="4000"
-                :autoplayHoverPause="false"
-                :perPage="1"
-                :loop="true"
-                :speed="1000"
-                :paginationPadding="5"
+            <img
+                src="/static/258_TO8_2321.jpg"
+                alt="engagement-photo"
+                style="width:100%;"
             >
-                <slide>
-                    <img
-                        src="/static/TO1_2911-min.jpg"
-                        alt="1"
-                    >
-                </slide>
-                <slide>
-                    <img
-                        src="/static/TO1_2911-min.jpg"
-                        alt="2"
-                    >
-                </slide>
-                <slide>
-                    <img
-                        src="/static/TO1_2911-min.jpg"
-                        alt="3"
-                    >
-                </slide>
-            </carousel>
-            <h2
-                :class="$style.were_getting_married"
-            >
-                MR AND MRS<br />FORCIER
-            </h2>
         </div>
         <div class="homeCards">
             <div class="homeCard">

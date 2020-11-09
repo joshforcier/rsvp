@@ -10,9 +10,9 @@
                 class="pic"
             >
                 <a
-                    :download="src.pathOriginal"
-                    :href="src.pathOriginal"
-                >
+                    :download="ogImages[index].path"
+                    :href="ogImages[index].path"
+                > 
                     <span>
                         <img
                             class="download_icon"
@@ -34,9 +34,10 @@
 
 export default {
     name: "Pictures",
-    data: function () {
+    data() {
         return {
             images: [],
+            ogImages: [],
         };
     },
     methods: {
@@ -44,26 +45,20 @@ export default {
             r.keys().forEach(key => (
                 this.images.push({
                     path: r(key),
-                    pathOriginal: r(key).replace(/\.jpg$/, '_og.png'),
+                })
+            ));
+        },
+        importOG(r) {
+            r.keys().forEach(key => (
+                this.ogImages.push({
+                    path: r(key),
                 })
             ));
         },
     },
-    computed: {
-        // sortedImages() {
-        //     const data = this.images;
-        //     for (let i = data.length - 1; i > 0; i--) {
-        //         let j = Math.floor(Math.random() * (i + 1));
-        //         let temp = data[i];
-        //         data[i] = data[j];
-        //         data[j] = temp;
-        //     }
-
-        //     return data;
-        // },
-    },
     mounted() {
         this.importAll(require.context('../../static/images/wedding', true, /\.jpg$/));
+        this.importOG(require.context('../../static/images/og', true, /\.jpg$/));
     },
 }
 
@@ -83,10 +78,18 @@ export default {
     width: 100%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .gallery {
-        column-count: 3;
-        column-gap: 10px;
+        column-count: 2;
+        column-gap: 3px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .gallery {
+        column-count: 4;
+        column-gap: 3px;
+        width: 150%;
     }
 }
 .pic {
@@ -97,8 +100,8 @@ img {
     transition: 0.3s ease;
 }
 .pic .img {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
-    margin-bottom: 10px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0); */
+    margin-bottom: 3px;
 }
 .download_icon {
     cursor: pointer;

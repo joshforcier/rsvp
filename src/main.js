@@ -10,7 +10,11 @@ import VueAnalytics from 'vue-analytics';
 import Embed from 'v-video-embed';
 import Lightbox from 'vue-easy-lightbox';
 import VueCarousel from 'vue-carousel';
+import VueLazyload from 'vue-lazyload';
 
+Vue.use(VueLazyload, {
+    preLoad: 2,
+});
 Vue.use(VueCarousel);
 Vue.use(Lightbox);
 Vue.use(Embed);
