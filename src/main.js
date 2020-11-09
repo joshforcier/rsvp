@@ -9,7 +9,9 @@ import { rtdbPlugin } from "vuefire";
 import VueAnalytics from 'vue-analytics';
 import Embed from 'v-video-embed';
 import Lightbox from 'vue-easy-lightbox';
- 
+import VueCarousel from 'vue-carousel';
+
+Vue.use(VueCarousel);
 Vue.use(Lightbox);
 Vue.use(Embed);
 Vue.use(router);

@@ -5,25 +5,28 @@
         </div>
         <div class="gallery">
             <div
-                v-for="(src, index) in sortedImages"
+                v-for="(src, index) in images"
                 :key="index"
                 class="pic"
-                @click="() => showImg(index)"
             >
-                <a :download="src.path" :href="src.path">
+                <a
+                    :download="src.pathOriginal"
+                    :href="src.pathOriginal"
+                >
                     <span>
-                        <img class="download_icon" src="../assets/icons/cloud-computing.svg" alt="">
+                        <img
+                            class="download_icon"
+                            src="../assets/icons/cloud-computing.svg"
+                            alt=""
+                        >
                     </span>
                 </a>
-                <img class="img" :src="src.path">
+                <img
+                    class="img"
+                    :src="src.path"
+                >
             </div>
         </div>
-        <vue-easy-lightbox
-            :visible="visible"
-            :imgs="sortedImages"
-            :index="index"
-            @hide="handleHide"
-        />
     </div>
 </template>
 
@@ -34,8 +37,6 @@ export default {
     data: function () {
         return {
             images: [],
-            index: 0,
-            visible: false,
         };
     },
     methods: {
@@ -43,36 +44,26 @@ export default {
             r.keys().forEach(key => (
                 this.images.push({
                     path: r(key),
-
+                    pathOriginal: r(key).replace(/\.jpg$/, '_og.png'),
                 })
             ));
         },
-        showImg (index) {
-            // this.index = index
-            // this.visible = true
-        },
-        handleHide() {
-            // this.visible = false;
-        },
-        show() {
-            // this.visible = true;
-        },
     },
     computed: {
-        sortedImages() {
-            const data = this.images;
-            for (let i = data.length - 1; i > 0; i--) {
-                let j = Math.floor(Math.random() * (i + 1));
-                let temp = data[i];
-                data[i] = data[j];
-                data[j] = temp;
-            }
+        // sortedImages() {
+        //     const data = this.images;
+        //     for (let i = data.length - 1; i > 0; i--) {
+        //         let j = Math.floor(Math.random() * (i + 1));
+        //         let temp = data[i];
+        //         data[i] = data[j];
+        //         data[j] = temp;
+        //     }
 
-            return data;
-        },
+        //     return data;
+        // },
     },
     mounted() {
-        this.importAll(require.context('../../static/images/', true, /\.jpg$/));
+        this.importAll(require.context('../../static/images/wedding', true, /\.jpg$/));
     },
 }
 

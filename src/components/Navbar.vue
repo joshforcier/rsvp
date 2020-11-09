@@ -1,6 +1,6 @@
 <template>
     <div>
-        <b-navbar 
+        <b-navbar
             toggleable="lg"
             type="light"
             variant="light"
@@ -53,11 +53,11 @@ export default {
                     name: "Ceremony",
                     path: "/video",
                 },
-                // {
-                //     id: 3,
-                //     name: "Gallery",
-                //     path: "/pictures",
-                // },
+                {
+                    id: 3,
+                    name: "Gallery",
+                    path: "/pictures",
+                },
             ],
         }
     },

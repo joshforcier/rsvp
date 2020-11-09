@@ -1,26 +1,45 @@
 <template>
     <div class="content home">
         <div
-            :class="$style.container"
+                :class="$style.container"
         >
-            <img
-                src="/static/TO1_2911-min.jpg"
-                alt="engagement-photo"
-                style="width:100%;"
+            <carousel
+                :autoplay="true"
+                :autoplayTimeout="4000"
+                :autoplayHoverPause="false"
+                :perPage="1"
+                :loop="true"
+                :speed="1000"
+                :paginationPadding="5"
             >
-            <h2 
+                <slide>
+                    <img
+                        src="/static/TO1_2911-min.jpg"
+                        alt="1"
+                    >
+                </slide>
+                <slide>
+                    <img
+                        src="/static/TO1_2911-min.jpg"
+                        alt="2"
+                    >
+                </slide>
+                <slide>
+                    <img
+                        src="/static/TO1_2911-min.jpg"
+                        alt="3"
+                    >
+                </slide>
+            </carousel>
+            <h2
                 :class="$style.were_getting_married"
             >
                 MR AND MRS<br />FORCIER
-                
             </h2>
         </div>
         <div class="homeCards">
             <div class="homeCard">
                 <div class="home__card">
-                    <!-- <span class="home__icons">
-                        <img src="../assets/icons/met.svg" alt="">
-                    </span> -->
                     <div class="home__info">
                         <div class="cardTitle">HOW WE MET</div>
                         <div class="cardTitle">June 2015</div>
@@ -67,9 +86,6 @@
             </div>
             <div class="homeCard">
                 <div class="home__card">
-                    <!-- <span class="home__icons">
-                        <img src="../assets/icons/proposal.svg" alt="">
-                    </span> -->
                     <div class="home__info">
                         <div class="cardTitle">THE PROPOSAL</div>
                         <div class="cardTitle">May 2019</div>
@@ -100,19 +116,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="homeCard">
-                <router-link :to="{ name: 'Story', params: { title: marriageTitle, story: marriage } }">
-                    <div class="home__card">
-                        <span class="home__icons">
-                            <img src="../assets/icons/ring.svg" alt="">
-                        </span>
-                        <div class="home__info">
-                            <div class="cardTitle">THE MARRIAGE</div>
-                            <div class="">September 2019</div>
-                        </div>
-                    </div>
-                </router-link>
-            </div> -->
         </div>
     </div>
 </template>
@@ -137,24 +140,29 @@ export default {
 .container {
     position: relative;
     text-align: center;
-    color: white;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.09);
 }
 
 .were_getting_married {
     font-family: "Poiret One";
+    color: white;
     position: absolute;
-    top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    font-size: 2rem;
+    transform: translate(10%, -400%);
+    font-size: 1rem;
     letter-spacing: 0.3rem;
     text-shadow: 0 0 25px hsla(0, 0%, 0%, 1);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 767px) {
+    .were_getting_married {
+        font-size: 2rem;
+        transform: translate(25%, -350%);
+    }
+}
+
+@media screen and (min-width: 1025px) {
     .were_getting_married {
         font-size: 4rem;
+        transform: translate(50%, -350%);
     }
 }
 
@@ -164,6 +172,10 @@ export default {
 
 .content {
     font-family: "Poiret One";
+}
+
+.home img {
+    width: 100%;
 }
 
 .right {
@@ -177,10 +189,6 @@ export default {
 
 img {
     margin-top: 0px;
-}
-
-.homeCards {
-    margin-top: 5%;
 }
 
 .homeCard {
