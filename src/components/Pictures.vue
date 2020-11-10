@@ -40,21 +40,21 @@ export default {
         };
     },
     methods: {
-importAll(r) {
-    let thumnailArray = r.keys();
-    thumnailArray = thumnailArray.filter(s => !s.includes('_og'));
-    thumnailArray.forEach(key => (
-        this.images.push({
-            path: r(key),
-        })
-    ));
+        importAll(r) {
+            let thumnailArray = r.keys();
+            thumnailArray = thumnailArray.filter(s => !s.includes('_og'));
+            thumnailArray.forEach(key => (
+                this.images.push({
+                    path: r(key),
+                })
+            ));
 
-    let originalArray = r.keys();
-    originalArray = originalArray.filter(s => s.includes('_og'));
-    originalArray.forEach((key, index) => (
-        this.images[index].pathOriginal = r(key)
-    ));
-},
+            let originalArray = r.keys();
+            originalArray = originalArray.filter(s => s.includes('_og'));
+            originalArray.forEach((key, index) => (
+                this.images[index].pathOriginal = r(key)
+            ));
+        },
     },
     mounted() {
         this.importAll(require.context('../../static/images/wedding', true, /\.jpg$/));
