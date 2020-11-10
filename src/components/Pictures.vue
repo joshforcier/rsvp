@@ -10,8 +10,8 @@
                 class="pic"
             >
                 <a
-                    :download="ogImages[index].path"
-                    :href="ogImages[index].path"
+                    :download="src.pathOriginal"
+                    :href="src.pathOriginal"
                 > 
                     <span>
                         <img
@@ -37,28 +37,27 @@ export default {
     data() {
         return {
             images: [],
-            ogImages: [],
         };
     },
     methods: {
-        importAll(r) {
-            r.keys().forEach(key => (
-                this.images.push({
-                    path: r(key),
-                })
-            ));
-        },
-        importOG(r) {
-            r.keys().forEach(key => (
-                this.ogImages.push({
-                    path: r(key),
-                })
-            ));
-        },
+importAll(r) {
+    let thumnailArray = r.keys();
+    thumnailArray = thumnailArray.filter(s => !s.includes('_og'));
+    thumnailArray.forEach(key => (
+        this.images.push({
+            path: r(key),
+        })
+    ));
+
+    let originalArray = r.keys();
+    originalArray = originalArray.filter(s => s.includes('_og'));
+    originalArray.forEach((key, index) => (
+        this.images[index].pathOriginal = r(key)
+    ));
+},
     },
     mounted() {
         this.importAll(require.context('../../static/images/wedding', true, /\.jpg$/));
-        this.importOG(require.context('../../static/images/og', true, /\.jpg$/));
     },
 }
 
