@@ -23,6 +23,7 @@
                 </a>
                 <img
                     class="img"
+                    loading="lazy"
                     :src="src.path"
                 >
             </div>
